@@ -1,0 +1,21 @@
+@font-face {
+  font-family: azonix;
+  src: url('../fonts/azonix/azonix.ttf') format('truetype');
+}
+
+$background-color: #161616;
+$white-color: #efefef;
+$font-title: azonix;
+$font-text: 'Open Sans', sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background-color;
+  color: $white-color;
+  font-family: $font-text;
+}
