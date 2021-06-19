@@ -62,6 +62,18 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.mp4$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[hash].[ext]',
+              outputPath: 'video/',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [

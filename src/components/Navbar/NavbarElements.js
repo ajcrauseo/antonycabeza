@@ -3,9 +3,9 @@ import { Link as LinkS } from 'react-scroll';
 import { Link as LinkR } from 'react-router-dom';
 
 export const Nav = styled.nav`
-  background: #0d0d0d;
+  background: transparent;
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,9 +66,15 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
+  transition: 0.2s ease-in-out;
+  &:hover {
+    color: #fff;
+    border-bottom: 3px solid #004191;
+    transition: 0.2s ease-in-out;
+  }
   &.active {
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid #004191;
+    transition: 0.2s ease-in-out;
   }
 `;
 
@@ -83,7 +89,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background-color: blue;
+  background-color: #004191;
   white-space: nowrap;
   padding: 10px 22px;
   outline: none;
@@ -97,6 +103,6 @@ export const NavBtnLink = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background-color: #efefef;
-    color: blue;
+    color: #004191;
   }
 `
