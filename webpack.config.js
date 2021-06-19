@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'build.js',
-    publicPath: '/',
+    publicPath: './',
   },
   mode: 'production',
   resolve: {
@@ -46,7 +46,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'assets/[hash].[ext]',
+              name: 'images/[hash].[ext]',
             },
           },
         ],
@@ -63,6 +63,18 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.mp4$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[hash].[ext]',
+              outputPath: 'videos/',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -71,7 +83,7 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'assets/[name].css',
+      filename: './styles/[name].css',
     }),
   ],
 };
