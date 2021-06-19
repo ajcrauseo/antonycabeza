@@ -15,7 +15,7 @@ import {
 } from './NavbarElements';
 // Assets
 import '../../assets/styles/components/Navbar.scss';
-import Logo from '../../assets/statics/antony-cabeza-logo-bnw.png';
+import Logo from '../../assets/images/antony-cabeza-logo-bnw.png';
 
 const Navbar = ({toggle}) => {
   return (

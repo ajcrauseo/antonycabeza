@@ -14,7 +14,7 @@ import {
 } from './HeroElements';
 import { Button } from '../ButtonElement';
 // Assets
-import Video from '../../assets/statics/background-hero.mp4';
+import Video from '../../assets/videos/background-hero.mp4';
 
 const Hero = () => {
   const [hover, setHover] = useState(false);
