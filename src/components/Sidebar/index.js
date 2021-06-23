@@ -21,13 +21,45 @@ const Sidebar = ({ isOpen, toggle }) => {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to='acerca' onClick={toggle}>Acerca de mí</SidebarLink>
-            <SidebarLink to='proyectos' onClick={toggle}>Proyectos</SidebarLink>
-            <SidebarLink to='contacto' onClick={toggle}>Contacto</SidebarLink>
+            <SidebarLink
+              to='acerca'
+              onClick={toggle}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact={true}
+              offset={-80}
+            >
+              Acerca de mí
+            </SidebarLink>
+            <SidebarLink
+              to='proyectos'
+              onClick={toggle}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact={true}
+              offset={-80}
+            >
+              Proyectos
+            </SidebarLink>
+            <SidebarLink
+              to='contacto'
+              onClick={toggle}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact={true}
+              offset={-80}
+            >
+              Contacto
+            </SidebarLink>
           </SidebarMenu>
         </SidebarWrapper>
         <SideBtnWrap>
-          <SidebarRoute to='/' onClick={toggle}>Descargar CV</SidebarRoute>
+          <SidebarRoute to='/' onClick={toggle}>
+            Descargar CV
+          </SidebarRoute>
         </SideBtnWrap>
       </SidebarContainer>
     </>

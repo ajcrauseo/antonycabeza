@@ -33,7 +33,7 @@ const Projects = () => {
   };
 
   const decrementCountCard = () => {
-    if (countCard == 0) {
+    if (countCard == 1) {
       return false;
     }
 
@@ -44,7 +44,7 @@ const Projects = () => {
 
   return (
     <>
-      <ProjectsContainer>
+      <ProjectsContainer id='proyectos'>
         <ProjectsH1>Proyectos</ProjectsH1>
         <ArrowLeft onClick={decrementCountCard} />
 

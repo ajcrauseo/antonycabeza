@@ -14,7 +14,7 @@ import {
 } from './HeroElements';
 import { Button } from '../ButtonElement';
 // Assets
-import Video from '../../assets/videos/background-hero.mp4';
+import Video from '../../assets/videos/background-hero-editado3.mp4';
 
 const Hero = () => {
   const [hover, setHover] = useState(false);
@@ -24,7 +24,7 @@ const Hero = () => {
   };
 
   return (
-    <HeroContainer>
+    <HeroContainer id='home'>
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
