@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
 // Icons
 import {
   FaGithub,
@@ -24,6 +23,9 @@ export const ProjectsContainer = styled.section`
     '. dot .';
   background-color: #0d0d0d;
   color: #efefef;
+  @media screen and (min-width: 1024px) {
+    height: 95vh;
+  }
 `;
 
 export const ProjectsH1 = styled.h1`
@@ -31,6 +33,9 @@ export const ProjectsH1 = styled.h1`
   text-align: center;
   font-size: 32px;
   grid-area: title;
+  @media screen and (min-width: 768px) {
+    margin: 40px 0;
+  }
 `;
 
 export const CardsWrapper = styled.div`
@@ -49,9 +54,10 @@ export const CardsWrapper = styled.div`
 
 export const ProjectCard = styled.article`
   width: 100%;
-  height: 70vh;
+  max-width: 750px;
+  height: 75vh;
   padding: 20px 15px;
-  margin: 0 10px;
+  margin: 0 auto;
 
   display: none;
   grid-template-areas:
@@ -67,12 +73,13 @@ export const ProjectCard = styled.article`
 
   transition: 0.3s ease;
 
-  &.project-${props => props.countCard} {
+  &.project-${(props) => props.countCard} {
     display: grid;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 950px) {
     padding: 20px;
+    height: 60vh;
     grid-template-areas:
       'image title title'
       'image description description'
@@ -84,6 +91,9 @@ export const ProjectImage = styled.img`
   width: 240px;
   height: auto;
   grid-area: image;
+  @media screen and (min-width: 950px) {
+    width: 280px;
+  }
 `;
 
 export const ProjectTitle = styled.h3`
@@ -92,6 +102,10 @@ export const ProjectTitle = styled.h3`
   margin: 10px 0;
   text-align: center;
   grid-area: title;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
 `;
 
 export const ProjectDescription = styled.p`
@@ -100,23 +114,33 @@ export const ProjectDescription = styled.p`
   margin: 10px 0;
   grid-area: description;
   justify-self: center;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 40px;
+  }
 `;
 
-export const ProjectButton = styled(LinkR)`
+export const ProjectButton = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   width: 200px;
   padding: 8px 32px;
-  margin: 10px 0;
+  margin: 10px 2px;
   background-color: #004191;
   color: #efefef;
   font-size: 18px;
   font-weight: 600;
   border-radius: 50px;
+  transition: all 0.2s ease-in-out;
 
   grid-area: ${({ webicon }) => (webicon ? 'btn-web' : 'btn-github')};
+
+  &:hover {
+    background: #efefef;
+    color: #0d0d0d;
+  }
 `;
 export const WebIcon = styled(FaGlobe)`
   margin-left: 8px;
@@ -143,6 +167,7 @@ export const ArrowRight = styled(FaChevronRight)`
 `;
 
 export const DotWrapper = styled.div`
+  margin-top: -30px;
   grid-area: dot;
 `;
 
@@ -150,7 +175,7 @@ export const Dot = styled(BsDot)`
   font-size: 40px;
   height: 100%;
   transition: 0.3s ease-in-out;
-  &:nth-child(${props => props.countCard}) {
+  &:nth-child(${(props) => props.countCard}) {
     color: #004191;
   }
 `;
