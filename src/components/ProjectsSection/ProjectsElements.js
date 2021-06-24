@@ -88,33 +88,44 @@ export const ProjectCard = styled.article`
 `;
 
 export const ProjectImage = styled.img`
-  width: 240px;
+  width: 170px;
   height: auto;
   grid-area: image;
+  @media screen and (min-width: 400px) {
+    width: 240px;
+  }
   @media screen and (min-width: 950px) {
     width: 280px;
   }
 `;
 
 export const ProjectTitle = styled.h3`
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 5px 0;
   text-align: center;
   grid-area: title;
 
+  @media screen and (min-width: 400px) {
+    margin: 10px 0;
+    font-size: 22px;
+  }
   @media screen and (min-width: 768px) {
     font-size: 32px;
   }
 `;
 
 export const ProjectDescription = styled.p`
-  font-size: 18px;
+  font-size: 16px;
   padding: 0 20px 0 28px;
-  margin: 10px 0;
+  margin: 5px 0;
   grid-area: description;
   justify-self: center;
 
+  @media screen and (min-width: 400px) {
+    font-size: 18px;
+    margin: 10px 0;
+  }
   @media screen and (min-width: 768px) {
     padding-left: 40px;
   }
@@ -125,12 +136,13 @@ export const ProjectButton = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  width: 200px;
+  width: 90%;
+  max-width: 200px; 
   padding: 8px 32px;
   margin: 10px 2px;
   background-color: #004191;
   color: #efefef;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   border-radius: 50px;
   transition: all 0.2s ease-in-out;
@@ -140,6 +152,10 @@ export const ProjectButton = styled.a`
   &:hover {
     background: #efefef;
     color: #0d0d0d;
+  }
+
+  @media screen and (min-width: 400px) {
+    font-size: 18px;
   }
 `;
 export const WebIcon = styled(FaGlobe)`
