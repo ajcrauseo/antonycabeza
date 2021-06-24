@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import {
   ProjectsContainer,
-  ProjectsH1,
+  ProjectsH2,
   CardsWrapper,
   ProjectCard,
   ProjectImage,
@@ -50,7 +50,7 @@ const Projects = () => {
   return (
     <>
       <ProjectsContainer id='proyectos'>
-        <ProjectsH1>Proyectos</ProjectsH1>
+        <ProjectsH2>Proyectos</ProjectsH2>
         <ArrowLeft onClick={decrementCountCard} />
 
         <CardsWrapper>

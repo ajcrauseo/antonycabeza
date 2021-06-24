@@ -8,12 +8,12 @@ import {
 } from 'react-icons/fa';
 import { BsDot } from 'react-icons/bs';
 
-// let countCard = 2;
-
 export const ProjectsContainer = styled.section`
-  height: auto;
+  height: 90vh;
   width: 100%;
-  padding: 0 10px 30px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 10px;
   overflow-x: hidden;
   display: grid;
   place-items: center;
@@ -23,41 +23,33 @@ export const ProjectsContainer = styled.section`
     '. dot .';
   background-color: #0d0d0d;
   color: #efefef;
-  @media screen and (min-width: 1024px) {
-    height: 95vh;
-  }
 `;
 
-export const ProjectsH1 = styled.h1`
-  margin: 60px 0;
+export const ProjectsH2 = styled.h2`
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
   grid-area: title;
+  align-self: end;
   @media screen and (min-width: 768px) {
-    margin: 40px 0;
+    font-size: 32px;
   }
 `;
 
 export const CardsWrapper = styled.div`
   display: flex;
   flex-direction: initial;
-  width: 75vw;
+  width: 90%;
   height: auto;
   margin-bottom: 40px;
-  overflow-x: scroll;
   grid-area: card;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
 `;
 
 export const ProjectCard = styled.article`
   width: 100%;
   max-width: 750px;
-  height: 75vh;
+  height: 100%;
   padding: 20px 15px;
-  margin: 0 auto;
+  margin: 10px auto 0;
 
   display: none;
   grid-template-areas:
@@ -75,6 +67,16 @@ export const ProjectCard = styled.article`
 
   &.project-${(props) => props.countCard} {
     display: grid;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 20px;
+    height: 60vh;
+    grid-template-areas:
+      'image image'
+      'title title'
+      'description description'
+      'btn-web btn-github';
   }
 
   @media screen and (min-width: 950px) {
@@ -100,13 +102,13 @@ export const ProjectImage = styled.img`
 `;
 
 export const ProjectTitle = styled.h3`
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin: 5px 0;
   text-align: center;
   grid-area: title;
 
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 321px) {
     margin: 10px 0;
     font-size: 22px;
   }
@@ -116,11 +118,15 @@ export const ProjectTitle = styled.h3`
 `;
 
 export const ProjectDescription = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   padding: 0 20px 0 28px;
   margin: 5px 0;
   grid-area: description;
   justify-self: center;
+
+  @media screen and (min-width: 321px) {
+    font-size: 16px;
+  }
 
   @media screen and (min-width: 400px) {
     font-size: 18px;
@@ -132,17 +138,17 @@ export const ProjectDescription = styled.p`
 `;
 
 export const ProjectButton = styled.a`
+  width: 90%;
+  max-width: 180px;
+  padding: 6px 32px;
+  margin: 6px 2px;
+  background-color: #004191;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  width: 90%;
-  max-width: 200px; 
-  padding: 8px 32px;
-  margin: 10px 2px;
-  background-color: #004191;
   color: #efefef;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   border-radius: 50px;
   transition: all 0.2s ease-in-out;
@@ -153,9 +159,10 @@ export const ProjectButton = styled.a`
     background: #efefef;
     color: #0d0d0d;
   }
-
-  @media screen and (min-width: 400px) {
-    font-size: 18px;
+  @media screen and (min-width: 321px) {
+    padding: 8px 32px;
+    margin: 10px 2px;
+    font-size: 16px;
   }
 `;
 export const WebIcon = styled(FaGlobe)`
@@ -173,6 +180,9 @@ export const ArrowLeft = styled(FaChevronLeft)`
   grid-area: left;
   height: 100%;
   cursor: pointer;
+  @media screen and (min-width: 1024px) {
+    justify-self: end;
+  }
 `;
 
 export const ArrowRight = styled(FaChevronRight)`
@@ -180,11 +190,18 @@ export const ArrowRight = styled(FaChevronRight)`
   grid-area: right;
   height: 100%;
   cursor: pointer;
+  @media screen and (min-width: 1024px) {
+    justify-self: start;
+  }
 `;
 
 export const DotWrapper = styled.div`
-  margin-top: -30px;
+  margin-top: -50px;
+  align-self: start;
   grid-area: dot;
+  @media screen and (min-width: 321px) {
+    margin-top: -30px;
+  }
 `;
 
 export const Dot = styled(BsDot)`
