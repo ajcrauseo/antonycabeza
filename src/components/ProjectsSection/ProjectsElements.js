@@ -137,34 +137,6 @@ export const ProjectDescription = styled.p`
   }
 `;
 
-export const ProjectButton = styled.a`
-  width: 90%;
-  max-width: 180px;
-  padding: 6px 32px;
-  margin: 6px 2px;
-  background-color: #004191;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #efefef;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 50px;
-  transition: all 0.2s ease-in-out;
-
-  grid-area: ${({ webicon }) => (webicon ? 'btn-web' : 'btn-github')};
-
-  &:hover {
-    background: #efefef;
-    color: #0d0d0d;
-  }
-  @media screen and (min-width: 321px) {
-    padding: 8px 32px;
-    margin: 10px 2px;
-    font-size: 16px;
-  }
-`;
 export const WebIcon = styled(FaGlobe)`
   margin-left: 8px;
   font-size: 20px;

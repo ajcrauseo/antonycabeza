@@ -1,5 +1,7 @@
+// Dependencies
 import React, { useState } from 'react';
-
+// Components
+import { ButtonLink } from '../ButtonLinkElement';
 import {
   ProjectsContainer,
   ProjectsH2,
@@ -8,7 +10,6 @@ import {
   ProjectImage,
   ProjectTitle,
   ProjectDescription,
-  ProjectButton,
   WebIcon,
   GitHubIcon,
   ArrowLeft,
@@ -63,19 +64,20 @@ const Projects = () => {
             <ProjectDescription>
               Single Page Application con JavaScript Vanilla que consume una API
             </ProjectDescription>
-            <ProjectButton
+            <ButtonLink
               webicon='true'
               href='https://ajcrauseo-rick-and-morty-characters.netlify.app/'
               target='_blank'
             >
               Visitar <WebIcon />
-            </ProjectButton>
-            <ProjectButton
+            </ButtonLink>
+            <ButtonLink
+              githubicon='true'
               href='https://github.com/ajcrauseo/rick-and-morty-characters'
               target='_blank'
             >
               Ver Código <GitHubIcon />
-            </ProjectButton>
+            </ButtonLink>
           </ProjectCard>
           <ProjectCard className='project-2' countCard={countCard}>
             <ProjectImage
@@ -86,19 +88,20 @@ const Projects = () => {
             <ProjectDescription>
               Easybank es un proyecto de frontendmentor.io de una landing page
             </ProjectDescription>
-            <ProjectButton
+            <ButtonLink
               webicon='true'
               href='https://ajcrauseo.github.io/easybank/'
               target='blank'
             >
               Visitar <WebIcon />
-            </ProjectButton>
-            <ProjectButton
+            </ButtonLink>
+            <ButtonLink
+              githubicon='true'
               href='https://github.com/ajcrauseo/easybank'
               target='blank'
             >
               Ver Código <GitHubIcon />
-            </ProjectButton>
+            </ButtonLink>
           </ProjectCard>
           <ProjectCard className='project-3' countCard={countCard}>
             <ProjectImage
@@ -109,19 +112,20 @@ const Projects = () => {
             <ProjectDescription>
               Lista de cosas que hacer, con lógica en JavaScript
             </ProjectDescription>
-            <ProjectButton
+            <ButtonLink
               webicon='true'
               href='https://ajcrauseo.github.io/todo-list/'
               target='blank'
             >
               Visitar <WebIcon />
-            </ProjectButton>
-            <ProjectButton
+            </ButtonLink>
+            <ButtonLink
+              githubicon='true'
               href='https://github.com/ajcrauseo/todo-list'
               target='blank'
             >
               Ver Código <GitHubIcon />
-            </ProjectButton>
+            </ButtonLink>
           </ProjectCard>
           <ProjectCard className='project-4' countCard={countCard}>
             <ProjectImage
@@ -132,19 +136,20 @@ const Projects = () => {
             <ProjectDescription>
               Juego con lógica en JavaScript
             </ProjectDescription>
-            <ProjectButton
+            <ButtonLink
               webicon='true'
               href='http://www.rpsgame.ga/'
               target='blank'
             >
               Visitar <WebIcon />
-            </ProjectButton>
-            <ProjectButton
+            </ButtonLink>
+            <ButtonLink
+              githubicon='true'
               href='https://github.com/ajcrauseo/rock-paper-scissors'
               target='blank'
             >
               Ver Código <GitHubIcon />
-            </ProjectButton>
+            </ButtonLink>
           </ProjectCard>
           <ProjectCard className='project-5' countCard={countCard}>
             <ProjectImage
@@ -155,19 +160,20 @@ const Projects = () => {
             <ProjectDescription>
               Landing page de una empresa de criptomonedas (ficticia)
             </ProjectDescription>
-            <ProjectButton
+            <ButtonLink
               webicon='true'
               href='https://ajcrauseo.github.io/batatabit'
               target='blank'
             >
               Visitar <WebIcon />
-            </ProjectButton>
-            <ProjectButton
-              href='https://github.com/ajcrauseo/batatabit'
+            </ButtonLink>
+            <ButtonLink
+            
+            href='https://github.com/ajcrauseo/batatabit'
               target='blank'
             >
               Ver Código <GitHubIcon />
-            </ProjectButton>
+            </ButtonLink>
           </ProjectCard>
         </CardsWrapper>
 

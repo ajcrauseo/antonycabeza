@@ -12,7 +12,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from './HeroElements';
-import { Button } from '../ButtonElement';
+import { ButtonScroll } from '../ButtonScrollElement';
 // Assets
 import Video from '../../assets/videos/background-hero-editado3.mp4';
 
@@ -34,14 +34,14 @@ const Hero = () => {
           Desarrollador Web especializado en JavaScript con el stack MERN
         </HeroP>
         <HeroBtnWrapper>
-          <Button
+          <ButtonScroll
             to='acerca'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
           >
             Conocer más {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </ButtonScroll>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
