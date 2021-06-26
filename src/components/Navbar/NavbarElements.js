@@ -32,6 +32,12 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
+export const NavLogo = styled.img`
+  margin-top: calc(50% - 8px);
+  height: 50px;
+  width: auto;
+`;
+
 export const MobileIcon = styled.div`
   display: none;
 

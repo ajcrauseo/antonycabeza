@@ -6,6 +6,7 @@ import { Link as LinkS } from 'react-scroll';
 import {
   Nav,
   NavbarContainer,
+  NavLogo,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -14,12 +15,9 @@ import {
   NavBtnLink,
 } from './NavbarElements';
 // Assets
-import '../../assets/styles/components/Navbar.scss';
 import Logo from '../../assets/images/antony-cabeza-logo-bnw.png';
 
 const Navbar = ({ toggle }) => {
-  // let transparency = window.scrollY;
-
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -44,9 +42,8 @@ const Navbar = ({ toggle }) => {
             duration={500}
             spy={true}
             exact={true}
-            className='NavLogo'
           >
-            <img src={Logo} alt='Logo Antony Cabeza' className='NavLogo--img' />
+            <NavLogo src={Logo} alt='Logo Antony Cabeza'/>
           </LinkS>
           <MobileIcon onClick={toggle}>
             <FaBars />
