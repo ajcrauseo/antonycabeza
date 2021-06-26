@@ -20,8 +20,8 @@ export const ButtonLink = styled.a`
   transition: all 0.2s ease-in-out;
 
   // Project Section Buttons
-  grid-area: ${({ webicon }) => (webicon ? 'btn-web' : 'none')};
-  grid-area: ${({ githubicon }) => (githubicon ? 'btn-github' : 'none')};
+  grid-area: ${({ webicon }) => (webicon ? 'btn-web' : 'initial')};
+  grid-area: ${({ githubicon }) => (githubicon ? 'btn-github' : 'initial')};
 
 
   &:hover {
