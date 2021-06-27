@@ -12,8 +12,10 @@ import {
   ProjectDescription,
   WebIcon,
   GitHubIcon,
+  ArrowLeftIcon,
   ArrowLeft,
   ArrowRight,
+  ArrowRightIcon,
   DotWrapper,
   Dot,
 } from './ProjectsElements';
@@ -30,7 +32,7 @@ const Projects = () => {
 
   const incrementCountCard = () => {
     if (countCard == 5) {
-      return false;
+      return setCountCard(1);
     }
 
     setCountCard(countCard + 1);
@@ -40,7 +42,7 @@ const Projects = () => {
 
   const decrementCountCard = () => {
     if (countCard == 1) {
-      return false;
+      return setCountCard(5);
     }
 
     setCountCard(countCard - 1);
@@ -52,7 +54,9 @@ const Projects = () => {
     <>
       <ProjectsContainer id='proyectos'>
         <ProjectsH2>Proyectos</ProjectsH2>
-        <ArrowLeft onClick={decrementCountCard} />
+        <ArrowLeft onClick={decrementCountCard}>
+          <ArrowLeftIcon />
+        </ArrowLeft>
 
         <CardsWrapper>
           <ProjectCard className='project-1' countCard={countCard}>
@@ -134,7 +138,7 @@ const Projects = () => {
             ></ProjectImage>
             <ProjectTitle>Rock, Paper and Scissors</ProjectTitle>
             <ProjectDescription>
-              Juego con lógica en JavaScript
+              Juego de piedra, papel o tijeras con lógica en JavaScript
             </ProjectDescription>
             <ButtonLink
               webicon='true'
@@ -168,16 +172,16 @@ const Projects = () => {
               Visitar <WebIcon />
             </ButtonLink>
             <ButtonLink
-            
-            href='https://github.com/ajcrauseo/batatabit'
+              href='https://github.com/ajcrauseo/batatabit'
               target='blank'
             >
               Ver Código <GitHubIcon />
             </ButtonLink>
           </ProjectCard>
         </CardsWrapper>
-
-        <ArrowRight onClick={incrementCountCard} />
+        <ArrowRight onClick={incrementCountCard}>
+          <ArrowRightIcon />
+        </ArrowRight>
         <DotWrapper>
           <Dot countCard={countCard} />
           <Dot countCard={countCard} />

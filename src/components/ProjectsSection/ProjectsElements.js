@@ -47,7 +47,8 @@ export const CardsWrapper = styled.div`
 export const ProjectCard = styled.article`
   width: 100%;
   max-width: 750px;
-  height: 100%;
+  min-height: 65vh;
+  /* height: 100%; */
   padding: 20px 15px;
   margin: 10px auto 0;
 
@@ -82,6 +83,7 @@ export const ProjectCard = styled.article`
   @media screen and (min-width: 950px) {
     padding: 20px;
     height: 60vh;
+    min-width: 720px;
     grid-template-areas:
       'image title title'
       'image description description'
@@ -147,23 +149,38 @@ export const GitHubIcon = styled(FaGithub)`
   font-size: 20px;
 `;
 
-export const ArrowLeft = styled(FaChevronLeft)`
-  font-size: 20px;
+export const ArrowLeft = styled.div`
   grid-area: left;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   height: 100%;
   cursor: pointer;
-  @media screen and (min-width: 1024px) {
-    justify-self: end;
-  }
 `;
 
-export const ArrowRight = styled(FaChevronRight)`
-  font-size: 20px;
+export const ArrowRight = styled.div`
   grid-area: right;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   height: 100%;
   cursor: pointer;
+  justify-self: center;
+`;
+
+export const ArrowLeftIcon = styled(FaChevronLeft)`
+  font-size: 20px;
+  height: 100%;
   @media screen and (min-width: 1024px) {
-    justify-self: start;
+    font-size: 26px;
+  }
+  `;
+
+export const ArrowRightIcon = styled(FaChevronRight)`
+  font-size: 20px;
+  height: 100%;
+  @media screen and (min-width: 1024px) {
+    font-size: 26px;
   }
 `;
 
