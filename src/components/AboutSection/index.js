@@ -19,12 +19,19 @@ const About = () => {
         <AboutDescriptionWrap>
           <AboutImage src={fotoPerfil} />
           <AboutDescription>
-            Hola, me llamo Antony J. Cabeza Rauseo, soy Desarrollador Frontend,
-            tengo 20 años. Soy una persona autodidacta y con gran curiosidad por
-            el Desarrollo de Software y la tecnología en general. Actualmente
-            estoy cursando la Escuela de Desarrollo Web y la Escuela de
-            JavaScript en Platzi. Cuento con amplios conocimientos de JavaScript
-            en general, especializado en React y Node.js.
+            {/* Hola me llamo Antony J. Cabeza Rauseo. soy Desarrollador Web
+            especializado en JavaScript. He adquirido mis conocimientos en la
+            plataforma de educación online Platzi y a día de hoy he logrado
+            certificarme en la Escuela de JavaScript y estoy cursando la Escuela
+            de Desarrollo Web. Me especializo más que nada en el stack MERN
+            (MongoDB, Express, React y NodeJS). */}
+            Hola, me llamo Antony J. Cabeza Rauseo, soy Desarrollador Web
+            especializado en JavaScript, tengo 20 años. Soy una persona
+            autodidacta y con gran curiosidad por el Desarrollo de Software y la
+            tecnología en general. Actualmente estoy cursando la Escuela de
+            Desarrollo Web y la Escuela de JavaScript en Platzi, donde he
+            aprendido a trabajar con el stack MERN (MongoDB, Express, React y
+            NodeJS).
           </AboutDescription>
           <ButtonScroll
             primary='true'
