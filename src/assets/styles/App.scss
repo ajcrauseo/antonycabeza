@@ -1,5 +1,17 @@
 @import '../../../node_modules/@sweetalert2/theme-dark/dark.css';
 
-.App {
-  background-color: #42476e;
-}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+ }
+ ::-webkit-scrollbar-thumb {
+  background: #757575;
+  border-radius: 5px;
+ }
+ ::-webkit-scrollbar-thumb:hover{
+  background: #a1a1a1;
+ }
+ ::-webkit-scrollbar-track{
+  background: #0d0d0d;
+  border-radius: 15px;
+ }
