@@ -25,8 +25,17 @@ const About = () => {
             estoy cursando la Escuela de Desarrollo Web y la Escuela de
             JavaScript en Platzi. Cuento con amplios conocimientos de JavaScript
             en general, especializado en React y Node.js.
-          </AboutDescription> 
-          <ButtonScroll primary='true' btn_about='true' to='contacto'>
+          </AboutDescription>
+          <ButtonScroll
+            primary='true'
+            btn_about='true'
+            to='contacto'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={true}
+            offset={-80}
+          >
             Contáctame
           </ButtonScroll>
         </AboutDescriptionWrap>
