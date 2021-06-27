@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
-import { Link as LinkR } from 'react-router-dom';
-
-let transparency = 0.5;
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
@@ -96,7 +93,7 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.a`
   border-radius: 50px;
   background-color: #004191;
   white-space: nowrap;

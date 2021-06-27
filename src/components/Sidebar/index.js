@@ -57,7 +57,11 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarMenu>
         </SidebarWrapper>
         <SideBtnWrap>
-          <SidebarRoute to='/' onClick={toggle}>
+          <SidebarRoute
+            href='https://drive.google.com/file/d/1aPLHsP105nZLRoPrt6VB3y_cWi7iCaIh/view?usp=sharing'
+            target='blank'
+            onClick={toggle}
+          >
             Descargar CV
           </SidebarRoute>
         </SideBtnWrap>

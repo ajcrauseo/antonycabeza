@@ -36,14 +36,8 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <LinkS
-            to='home'
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact={true}
-          >
-            <NavLogo src={Logo} alt='Logo Antony Cabeza'/>
+          <LinkS to='home' smooth={true} duration={500} spy={true} exact={true}>
+            <NavLogo src={Logo} alt='Logo Antony Cabeza' />
           </LinkS>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -87,7 +81,12 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/'>Descargar CV</NavBtnLink>
+            <NavBtnLink
+              href='https://drive.google.com/file/d/1aPLHsP105nZLRoPrt6VB3y_cWi7iCaIh/view?usp=sharing'
+              target='blank'
+            >
+              Descargar CV
+            </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
