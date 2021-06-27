@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { SiPlatzi } from 'react-icons/si';
 
 export const ContactContainer = styled.section`
   width: 100%;
@@ -30,10 +31,10 @@ export const ContactSocialMedia = styled.div`
   width: 90%;
   max-width: 750px;
   margin: 0 auto 20px;
-  padding: 10px 50px;
+  padding: 10px 30px;
   border-radius: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-image: linear-gradient(
     to right,
     #004191,
@@ -42,6 +43,9 @@ export const ContactSocialMedia = styled.div`
     #00224c,
     #001836
   );
+  @media screen and (min-width: 650px) {
+    justify-content: space-evenly;
+  }
 `;
 
 export const SocialMediaLink = styled.a`
@@ -52,23 +56,43 @@ export const SocialMediaLink = styled.a`
 `;
 
 export const ContactLinkedinIcon = styled(FaLinkedin)`
-  font-size: 30px;
+  font-size: 20px;
   color: #efefef;
+  @media screen and (min-width: 400px) {
+    font-size: 26px;
+  }
 `;
 
 export const ContactGithubIcon = styled(FaGithub)`
-  font-size: 30px;
+  font-size: 20px;
   color: #efefef;
+  @media screen and (min-width: 400px) {
+    font-size: 26px;
+  }
 `;
 
 export const ContactTwitterIcon = styled(FaTwitter)`
-  font-size: 30px;
+  font-size: 20px;
   color: #efefef;
+  @media screen and (min-width: 400px) {
+    font-size: 26px;
+  }
 `;
 
 export const ContactInstagramIcon = styled(FaInstagram)`
-  font-size: 30px;
+  font-size: 20px;
   color: #efefef;
+  @media screen and (min-width: 400px) {
+    font-size: 26px;
+  }
+`;
+
+export const ContactPlatziIcon = styled(SiPlatzi)`
+  font-size: 20px;
+  color: #efefef;
+  @media screen and (min-width: 400px) {
+    font-size: 26px;
+  }
 `;
 
 export const ContactFormWrap = styled.div`

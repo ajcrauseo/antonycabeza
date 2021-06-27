@@ -12,6 +12,7 @@ import {
   ContactTwitterIcon,
   ContactInstagramIcon,
   ContactFormWrap,
+  ContactPlatziIcon,
 } from './ContactElements';
 const Contact = () => {
   return (
@@ -19,8 +20,10 @@ const Contact = () => {
       <ContactContainer id='contacto'>
         <ContactH2>Contacto</ContactH2>
         <ContactSocialMedia>
-
-          <SocialMediaLink href='https://www.linkedin.com/in/antony-cabeza' target='blank'>
+          <SocialMediaLink
+            href='https://www.linkedin.com/in/antony-cabeza'
+            target='blank'
+          >
             <ContactLinkedinIcon />
           </SocialMediaLink>
 
@@ -28,14 +31,23 @@ const Contact = () => {
             <ContactGithubIcon />
           </SocialMediaLink>
 
+          <SocialMediaLink
+            href='https://platzi.com/p/ajcrauseo/'
+            target='blank'
+          >
+            <ContactPlatziIcon />
+          </SocialMediaLink>
+
           <SocialMediaLink href='https://twitter.com/ajcrauseo' target='blank'>
             <ContactTwitterIcon />
           </SocialMediaLink>
 
-          <SocialMediaLink href='https://www.instagram.com/ajcrauseo/' target='blank'>
+          <SocialMediaLink
+            href='https://www.instagram.com/ajcrauseo/'
+            target='blank'
+          >
             <ContactInstagramIcon />
           </SocialMediaLink>
-
         </ContactSocialMedia>
         <ContactFormWrap>
           <FormContact />
