@@ -5,7 +5,7 @@ import { SiPlatzi } from 'react-icons/si';
 export const ContactContainer = styled.section`
   width: 100%;
   max-width: 950px;
-  height: 88vh;
+  height: 80vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

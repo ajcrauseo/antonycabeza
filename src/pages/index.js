@@ -7,6 +7,7 @@ import HeroSection from '../components/HeroSection';
 import About from '../components/AboutSection';
 import Projects from '../components/ProjectsSection';
 import Contact from '../components/ContactSection';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,7 @@ const Home = () => {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 };
