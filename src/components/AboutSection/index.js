@@ -26,12 +26,11 @@ const About = () => {
             de Desarrollo Web. Me especializo más que nada en el stack MERN
             (MongoDB, Express, React y NodeJS). */}
             Hola, me llamo Antony J. Cabeza Rauseo, soy Desarrollador Web
-            especializado en JavaScript, tengo 20 años. Soy una persona
-            autodidacta y con gran curiosidad por el Desarrollo de Software y la
-            tecnología en general. Actualmente estoy cursando la Escuela de
-            Desarrollo Web y la Escuela de JavaScript en Platzi, donde he
-            aprendido a trabajar con el stack MERN (MongoDB, Express, React y
-            NodeJS).
+            especializado en JavaScript, específicamente con el stack MERN
+            (MongoDB, Express, React y NodeJS). Soy una persona autodidacta y
+            con gran curiosidad por el desarrollo de software y la tecnología en
+            general. Recientemente me certifiqué en la Escuela de JavaScript en
+            Platzi.
           </AboutDescription>
           <ButtonScroll
             primary='true'
