@@ -27,7 +27,7 @@ const Sidebar = ({ isOpen, toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              exact={true}
+              
               offset={-80}
             >
               Acerca de mí
@@ -38,7 +38,7 @@ const Sidebar = ({ isOpen, toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              exact={true}
+              
               offset={-80}
             >
               Proyectos
@@ -49,7 +49,7 @@ const Sidebar = ({ isOpen, toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              exact={true}
+              
               offset={-80}
             >
               Contacto

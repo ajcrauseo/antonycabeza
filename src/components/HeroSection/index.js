@@ -42,7 +42,6 @@ const Hero = () => {
             smooth={true}
             duration={500}
             spy={true}
-            exact={true}
             offset={-80}
           >
             Conocer más {hover ? <ArrowForward /> : <ArrowRight />}

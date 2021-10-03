@@ -19,12 +19,6 @@ const About = () => {
         <AboutDescriptionWrap>
           <AboutImage src={fotoPerfil} />
           <AboutDescription>
-            {/* Hola me llamo Antony J. Cabeza Rauseo. soy Desarrollador Web
-            especializado en JavaScript. He adquirido mis conocimientos en la
-            plataforma de educación online Platzi y a día de hoy he logrado
-            certificarme en la Escuela de JavaScript y estoy cursando la Escuela
-            de Desarrollo Web. Me especializo más que nada en el stack MERN
-            (MongoDB, Express, React y NodeJS). */}
             Hola, me llamo Antony J. Cabeza Rauseo, soy Desarrollador Web
             especializado en JavaScript, específicamente con el stack MERN
             (MongoDB, Express, React y NodeJS). Soy una persona autodidacta y
@@ -39,7 +33,6 @@ const About = () => {
             smooth={true}
             duration={500}
             spy={true}
-            exact={true}
             offset={-80}
           >
             Contáctame

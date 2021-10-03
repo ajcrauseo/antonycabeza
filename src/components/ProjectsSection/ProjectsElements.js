@@ -66,7 +66,7 @@ export const ProjectCard = styled.article`
 
   transition: 0.3s ease;
 
-  &.project-${(props) => props.countCard} {
+  &.project-${(props) => props.countcard} {
     display: grid;
   }
 
@@ -197,7 +197,7 @@ export const Dot = styled(BsDot)`
   font-size: 40px;
   height: 100%;
   transition: 0.3s ease-in-out;
-  &:nth-child(${(props) => props.countCard}) {
+  &:nth-child(${(props) => props.countcard}) {
     color: #004191;
   }
 `;

@@ -59,10 +59,39 @@ const Projects = () => {
         </ArrowLeft>
 
         <CardsWrapper>
-          <ProjectCard className='project-1' countCard={countCard}>
+          {/* ==================== Proyecto 1 ==================== */}
+
+          <ProjectCard className='project-1' countcard={countCard}>
             <ProjectImage
               src={project1}
               alt='Imagen del proyecto 1'
+            ></ProjectImage>
+            <ProjectTitle>Calendar App</ProjectTitle>
+            <ProjectDescription>
+              Aplicación de eventos en el calendario con el stack MERN
+            </ProjectDescription>
+            <ButtonLink
+              webicon='true'
+              href='https://ajcrauseo-calendar-app-mern.herokuapp.com/'
+              target='_blank'
+            >
+              Visitar <WebIcon />
+            </ButtonLink>
+            <ButtonLink
+              githubicon='true'
+              href='https://github.com/ajcrauseo/calendarApp-MERN'
+              target='_blank'
+            >
+              Ver Código <GitHubIcon />
+            </ButtonLink>
+          </ProjectCard>
+
+          {/* ==================== Proyecto 2 ==================== */}
+
+          <ProjectCard className='project-2' countcard={countCard}>
+            <ProjectImage
+              src={project2}
+              alt='Imagen del proyecto 2'
             ></ProjectImage>
             <ProjectTitle>Rick and Morty Characters</ProjectTitle>
             <ProjectDescription>
@@ -71,50 +100,29 @@ const Projects = () => {
             <ButtonLink
               webicon='true'
               href='https://ajcrauseo-rick-and-morty-characters.netlify.app/'
-              target='_blank'
+              target='blank'
             >
               Visitar <WebIcon />
             </ButtonLink>
             <ButtonLink
               githubicon='true'
               href='https://github.com/ajcrauseo/rick-and-morty-characters'
-              target='_blank'
-            >
-              Ver Código <GitHubIcon />
-            </ButtonLink>
-          </ProjectCard>
-          <ProjectCard className='project-2' countCard={countCard}>
-            <ProjectImage
-              src={project2}
-              alt='Imagen del proyecto 2'
-            ></ProjectImage>
-            <ProjectTitle>EasyBank</ProjectTitle>
-            <ProjectDescription>
-              Easybank es un proyecto de frontendmentor.io de una landing page
-            </ProjectDescription>
-            <ButtonLink
-              webicon='true'
-              href='https://ajcrauseo.github.io/easybank/'
-              target='blank'
-            >
-              Visitar <WebIcon />
-            </ButtonLink>
-            <ButtonLink
-              githubicon='true'
-              href='https://github.com/ajcrauseo/easybank'
               target='blank'
             >
               Ver Código <GitHubIcon />
             </ButtonLink>
           </ProjectCard>
-          <ProjectCard className='project-3' countCard={countCard}>
+
+          {/* ==================== Proyecto 3 ==================== */}
+
+          <ProjectCard className='project-3' countcard={countCard}>
             <ProjectImage
               src={project3}
               alt='Imagen del proyecto 3'
             ></ProjectImage>
             <ProjectTitle>To Do List</ProjectTitle>
             <ProjectDescription>
-              Lista de cosas que hacer, con lógica en JavaScript
+              Lista de cosas que hacer, hecha con JavaScript Vanilla
             </ProjectDescription>
             <ButtonLink
               webicon='true'
@@ -131,38 +139,46 @@ const Projects = () => {
               Ver Código <GitHubIcon />
             </ButtonLink>
           </ProjectCard>
-          <ProjectCard className='project-4' countCard={countCard}>
+
+          {/* ==================== Proyecto 4 ==================== */}
+
+          <ProjectCard className='project-4' countcard={countCard}>
             <ProjectImage
               src={project4}
               alt='Imagen del proyecto 4'
             ></ProjectImage>
-            <ProjectTitle>Rock, Paper and Scissors</ProjectTitle>
+            <ProjectTitle>EasyBank</ProjectTitle>
             <ProjectDescription>
-              Juego de piedra, papel o tijeras con lógica en JavaScript
+              Easybank es un proyecto de frontendmentor.io de una landing page.
+              Es una página estática
             </ProjectDescription>
             <ButtonLink
               webicon='true'
-              href='http://www.rpsgame.ga/'
+              href='https://ajcrauseo.github.io/easybank/'
               target='blank'
             >
               Visitar <WebIcon />
             </ButtonLink>
             <ButtonLink
               githubicon='true'
-              href='https://github.com/ajcrauseo/rock-paper-scissors'
+              href='https://github.com/ajcrauseo/easybank'
               target='blank'
             >
               Ver Código <GitHubIcon />
             </ButtonLink>
           </ProjectCard>
-          <ProjectCard className='project-5' countCard={countCard}>
+
+          {/* ==================== Proyecto 5 ==================== */}
+
+          <ProjectCard className='project-5' countcard={countCard}>
             <ProjectImage
               src={project5}
               alt='Imagen del proyecto 5'
             ></ProjectImage>
             <ProjectTitle>Batatabit</ProjectTitle>
             <ProjectDescription>
-              Landing page de una empresa de criptomonedas (ficticia)
+              Landing page de una empresa de criptomonedas (ficticia). Es una
+              página estática
             </ProjectDescription>
             <ButtonLink
               webicon='true'
@@ -179,15 +195,16 @@ const Projects = () => {
             </ButtonLink>
           </ProjectCard>
         </CardsWrapper>
+
         <ArrowRight onClick={incrementCountCard}>
           <ArrowRightIcon />
         </ArrowRight>
         <DotWrapper>
-          <Dot countCard={countCard} />
-          <Dot countCard={countCard} />
-          <Dot countCard={countCard} />
-          <Dot countCard={countCard} />
-          <Dot countCard={countCard} />
+          <Dot countcard={countCard} />
+          <Dot countcard={countCard} />
+          <Dot countcard={countCard} />
+          <Dot countcard={countCard} />
+          <Dot countcard={countCard} />
         </DotWrapper>
       </ProjectsContainer>
     </>
