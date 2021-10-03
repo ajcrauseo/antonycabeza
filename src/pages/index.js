@@ -10,7 +10,6 @@ import Projects from '../components/ProjectsSection';
 import Contact from '../components/ContactSection';
 import Footer from '../components/Footer';
 
-
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,10 +19,13 @@ const Home = () => {
 
   return (
     <>
-    <Helmet>
-      <title>Antony Cabeza</title>
-      <meta name="description" content="Antony Cabeza portafolio" />
-    </Helmet>
+      <Helmet>
+        <title>Antony Cabeza</title>
+        <meta
+          name='description'
+          content='Antony Cabeza. JavaScript Web Developer with MERN Stack'
+        />
+      </Helmet>
 
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
