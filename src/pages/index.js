@@ -1,5 +1,6 @@
 // Dependencies
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 // Components
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
@@ -8,6 +9,7 @@ import About from '../components/AboutSection';
 import Projects from '../components/ProjectsSection';
 import Contact from '../components/ContactSection';
 import Footer from '../components/Footer';
+
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +20,11 @@ const Home = () => {
 
   return (
     <>
+    <Helmet>
+      <title>Antony Cabeza</title>
+      <meta name="description" content="Antony Cabeza portafolio" />
+    </Helmet>
+
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />

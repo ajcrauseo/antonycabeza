@@ -17,7 +17,7 @@ const About = () => {
       <AboutContainer id='acerca'>
         <AboutH2>Acerca de mí</AboutH2>
         <AboutDescriptionWrap>
-          <AboutImage src={fotoPerfil} />
+          <AboutImage src={fotoPerfil} alt='Antony Cabeza' />
           <AboutDescription>
             Hola, me llamo Antony J. Cabeza Rauseo, soy Desarrollador Web
             especializado en JavaScript, específicamente con el stack MERN

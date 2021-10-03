@@ -8,7 +8,7 @@ const Footer = () => {
   return ( 
     <>
     <FooterContainer>
-      <FooterLogo src={logoImage}/>
+      <FooterLogo src={logoImage} alt='Logo Antony Cabeza'/>
       <FooterTitle>© 2021 Antony Cabeza</FooterTitle>
     </FooterContainer>
     </>
