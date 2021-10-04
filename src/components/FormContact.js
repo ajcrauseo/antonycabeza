@@ -11,7 +11,7 @@ const FormContact = () => {
     emailjs
       .sendForm(
         'gmailMessage',
-        'template_73giyxc',
+        'template_7l60yug',
         e.target,
         'user_JTUomaEwM4M7Ygjqp279k',
       )
@@ -44,7 +44,7 @@ const FormContact = () => {
       <input
         type='hidden'
         name='subject'
-        value='Mensaje enviado desde antonycabeza.js.org'
+        value='Mensaje enviado desde antonycabeza.com'
       />
       <label>Nombre</label>
       <input
@@ -64,7 +64,7 @@ const FormContact = () => {
       <textarea
         required
         name='message'
-        placeholder='Hola Antony, quisiera contratarte para (...)'
+        placeholder='Hola Antony, quisiera contactarte para (...)'
       />
       <input type='submit' value='Enviar' className='formButton' />
     </form>

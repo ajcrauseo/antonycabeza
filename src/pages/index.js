@@ -1,6 +1,5 @@
 // Dependencies
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 // Components
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
@@ -19,14 +18,6 @@ const Home = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Antony Cabeza</title>
-        <meta
-          name='description'
-          content='Antony Cabeza. JavaScript Web Developer with MERN Stack'
-        />
-      </Helmet>
-
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
