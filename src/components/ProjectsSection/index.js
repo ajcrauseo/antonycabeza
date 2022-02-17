@@ -93,6 +93,33 @@ const Projects = () => {
               src={project2}
               alt='Imagen del proyecto 2'
             ></ProjectImage>
+            <ProjectTitle>Toti Store</ProjectTitle>
+            <ProjectDescription>
+              Toti Store - Ecommerce con React.js y Commerce.js
+            </ProjectDescription>
+            <ButtonLink
+              webicon='true'
+              href='https://totistore.netlify.app/'
+              target='_blank'
+            >
+              Visitar <WebIcon />
+            </ButtonLink>
+            <ButtonLink
+              githubicon='true'
+              href='https://github.com/ajcrauseo/toti-store'
+              target='_blank'
+            >
+              Ver Código <GitHubIcon />
+            </ButtonLink>
+          </ProjectCard>
+
+          {/* ==================== Proyecto 3 ==================== */}
+
+          <ProjectCard className='project-3' countcard={countCard}>
+            <ProjectImage
+              src={project3}
+              alt='Imagen del proyecto 3'
+            ></ProjectImage>
             <ProjectTitle>Rick and Morty Characters</ProjectTitle>
             <ProjectDescription>
               Single Page Application con JavaScript Vanilla que consume una API
@@ -113,12 +140,12 @@ const Projects = () => {
             </ButtonLink>
           </ProjectCard>
 
-          {/* ==================== Proyecto 3 ==================== */}
+          {/* ==================== Proyecto 4 ==================== */}
 
-          <ProjectCard className='project-3' countcard={countCard}>
+          <ProjectCard className='project-4' countcard={countCard}>
             <ProjectImage
-              src={project3}
-              alt='Imagen del proyecto 3'
+              src={project4}
+              alt='Imagen del proyecto 4'
             ></ProjectImage>
             <ProjectTitle>To Do List</ProjectTitle>
             <ProjectDescription>
@@ -140,12 +167,12 @@ const Projects = () => {
             </ButtonLink>
           </ProjectCard>
 
-          {/* ==================== Proyecto 4 ==================== */}
+          {/* ==================== Proyecto 5 ==================== */}
 
-          <ProjectCard className='project-4' countcard={countCard}>
+          <ProjectCard className='project-5' countcard={countCard}>
             <ProjectImage
-              src={project4}
-              alt='Imagen del proyecto 4'
+              src={project5}
+              alt='Imagen del proyecto 5'
             ></ProjectImage>
             <ProjectTitle>EasyBank</ProjectTitle>
             <ProjectDescription>
@@ -168,32 +195,6 @@ const Projects = () => {
             </ButtonLink>
           </ProjectCard>
 
-          {/* ==================== Proyecto 5 ==================== */}
-
-          <ProjectCard className='project-5' countcard={countCard}>
-            <ProjectImage
-              src={project5}
-              alt='Imagen del proyecto 5'
-            ></ProjectImage>
-            <ProjectTitle>Batatabit</ProjectTitle>
-            <ProjectDescription>
-              Landing page de una empresa de criptomonedas (ficticia). Es una
-              página estática
-            </ProjectDescription>
-            <ButtonLink
-              webicon='true'
-              href='https://ajcrauseo.github.io/batatabit'
-              target='blank'
-            >
-              Visitar <WebIcon />
-            </ButtonLink>
-            <ButtonLink
-              href='https://github.com/ajcrauseo/batatabit'
-              target='blank'
-            >
-              Ver Código <GitHubIcon />
-            </ButtonLink>
-          </ProjectCard>
         </CardsWrapper>
 
         <ArrowRight onClick={incrementCountCard}>
