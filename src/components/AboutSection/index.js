@@ -7,6 +7,7 @@ import {
   AboutDescriptionWrap,
   AboutImage,
   AboutDescription,
+  AboutLink
 } from './AboutElements';
 
 import fotoPerfil from '../../assets/images/foto-perfil-antony-cabeza.png';
@@ -23,8 +24,12 @@ const About = () => {
             especializado en JavaScript, específicamente con el stack MERN
             (MongoDB, Express, React y NodeJS). Soy una persona autodidacta y
             con gran curiosidad por el desarrollo de software y la tecnología en
-            general. Recientemente me certifiqué en la Escuela de JavaScript en
-            Platzi.
+            general. He conseguido certificarme en la{' '}
+            <AboutLink href='https://platzi.com/escuela-javascript/' target='_blank'>
+              Escuela de JavaScript de Platzi
+            </AboutLink>
+            , así como diferentes cursos afines al desarrollo de software, tales
+            como: Git, SCRUM, Bases de Datos, Webpack, entre otros.
           </AboutDescription>
           <ButtonScroll
             primary='true'

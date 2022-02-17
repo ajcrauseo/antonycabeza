@@ -9,7 +9,7 @@ export const AboutContainer = styled.section`
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: 768px) {
-  justify-content: center;
+    justify-content: center;
   }
 `;
 
@@ -48,7 +48,7 @@ export const AboutImage = styled.img`
   max-width: 300px;
   border-radius: 100%;
   grid-area: image;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-top: 50px;
     width: 90%;
   }
@@ -71,4 +71,8 @@ export const AboutDescription = styled.p`
     margin-top: 50px;
     padding-left: 30px;
   }
+`;
+
+export const AboutLink = styled.a`
+  color: #0A5DC4;
 `;
