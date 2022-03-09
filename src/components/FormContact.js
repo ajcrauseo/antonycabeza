@@ -4,7 +4,7 @@ import Swal from 'sweetalert2/src/sweetalert2';
 
 import '../assets/styles/components/FormContact.scss';
 
-const FormContact = () => {
+const FormContact = ({ language }) => {
   function sendEmail(e) {
     e.preventDefault();
 
@@ -19,10 +19,12 @@ const FormContact = () => {
         (result) => {
           Swal.fire({
             icon: 'success',
-            title: 'Listo',
-            text: 'Mensaje enviado con éxito',
+            title: language ? 'Listo' : 'Ok',
+            text: language
+              ? 'Mensaje enviado con éxito'
+              : 'Message sent succesfully',
             // background: '#0d0d0d',
-            confirmButtonColor: '#004191'
+            confirmButtonColor: '#004191',
           });
           console.log(result.text);
         },
@@ -31,7 +33,9 @@ const FormContact = () => {
           Swal.fire({
             icon: 'error',
             title: 'Error',
-            text: 'Ha ocurrido un error, verifica la información e intenta de nuevo',
+            text: language
+              ? 'Ha ocurrido un error, verifica la información e intenta de nuevo'
+              : 'An error has occurred, please check the information and try again',
           });
         },
       );
@@ -46,27 +50,39 @@ const FormContact = () => {
         name='subject'
         value='Mensaje enviado desde antonycabeza.com'
       />
-      <label>Nombre</label>
+      <label>{language ? 'Nombre' : 'Name'}</label>
       <input
         required
         type='text'
-        placeholder='Tu nombre o de tu empresa'
+        placeholder={
+          language
+            ? 'Tu nombre o de tu empresa'
+            : `Your name or your company's name`
+        }
         name='name'
       />
       <label>Email</label>
       <input
         required
         type='email'
-        placeholder='Correo electrónico'
+        placeholder={language ? 'Correo electrónico' : 'Email'}
         name='email'
       />
-      <label>Mensaje</label>
+      <label>{language ? 'Mensaje' : 'Message'}</label>
       <textarea
         required
         name='message'
-        placeholder='Hola Antony, quisiera contactarte para (...)'
+        placeholder={
+          language
+            ? 'Hola Antony, quisiera contactarte para (...)'
+            : 'Hello Antony, I would like to contact you to (...)'
+        }
       />
-      <input type='submit' value='Enviar' className='formButton' />
+      <input
+        type='submit'
+        value={language ? 'Enviar' : 'Send'}
+        className='formButton'
+      />
     </form>
   );
 };

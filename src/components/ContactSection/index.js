@@ -14,11 +14,11 @@ import {
   ContactFormWrap,
   ContactPlatziIcon,
 } from './ContactElements';
-const Contact = () => {
+const Contact = ({ language }) => {
   return (
     <>
       <ContactContainer id='contacto'>
-        <ContactH2>Contacto</ContactH2>
+        <ContactH2>{language ? 'Contacto' : 'Contact'}</ContactH2>
         <ContactSocialMedia>
           <SocialMediaLink
             href='https://www.linkedin.com/in/antony-cabeza'
@@ -50,7 +50,7 @@ const Contact = () => {
           </SocialMediaLink>
         </ContactSocialMedia>
         <ContactFormWrap>
-          <FormContact />
+          <FormContact language={language} />
         </ContactFormWrap>
       </ContactContainer>
     </>

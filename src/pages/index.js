@@ -11,19 +11,33 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [language, setLanguage] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
+  const changeLanguage = () => {
+    setLanguage((prevState) => !prevState);
+  };
+
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      <HeroSection />
-      <About />
-      <Projects />
-      <Contact />
+      <Sidebar
+        isOpen={isOpen}
+        toggle={toggle}
+        changeLanguage={changeLanguage}
+        language={language}
+      />
+      <Navbar
+        toggle={toggle}
+        changeLanguage={changeLanguage}
+        language={language}
+      />
+      <HeroSection language={language} />
+      <About language={language} />
+      <Projects language={language} />
+      <Contact language={language} />
       <Footer />
     </>
   );
