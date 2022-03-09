@@ -13,11 +13,12 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  LanguageButton,
 } from './NavbarElements';
 // Assets
 import Logo from '../../assets/images/antony-cabeza-logo-bnw.png';
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, language, changeLanguage }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -51,7 +52,7 @@ const Navbar = ({ toggle }) => {
                 spy={true}
                 offset={-80}
               >
-                Acerca de mí
+                {language ? 'Acerca de mí' : 'About me'}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -62,7 +63,7 @@ const Navbar = ({ toggle }) => {
                 spy={true}
                 offset={-80}
               >
-                Proyectos
+                {language ? 'Proyectos' : 'Projects'}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -71,11 +72,16 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                
                 offset={-80}
               >
-                Contacto
+                {language ? 'Contacto' : 'Contact'}
               </NavLinks>
+            </NavItem>
+            <NavItem>
+              <LanguageButton type='button' onClick={changeLanguage}>
+                {language ? 'Cambiar idioma' : 'Change language'}
+                <span>{language ? '🇬🇧' : '🇪🇸'}</span>
+              </LanguageButton>
             </NavItem>
           </NavMenu>
           <NavBtn>
@@ -83,7 +89,7 @@ const Navbar = ({ toggle }) => {
               href='https://drive.google.com/file/d/1aPLHsP105nZLRoPrt6VB3y_cWi7iCaIh/view?usp=sharing'
               target='blank'
             >
-              Descargar CV
+              {language ? 'Descargar CV' : 'Download CV'}
             </NavBtnLink>
           </NavBtn>
         </NavbarContainer>

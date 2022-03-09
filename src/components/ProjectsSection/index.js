@@ -27,7 +27,7 @@ import project3 from '../../assets/images/project3.png';
 import project4 from '../../assets/images/project4.png';
 import project5 from '../../assets/images/project5.png';
 
-const Projects = () => {
+const Projects = ({ language }) => {
   const [countCard, setCountCard] = useState(1);
 
   const incrementCountCard = () => {
@@ -53,7 +53,7 @@ const Projects = () => {
   return (
     <>
       <ProjectsContainer id='proyectos'>
-        <ProjectsH2>Proyectos</ProjectsH2>
+        <ProjectsH2>{language ? 'Proyectos' : 'Projects'}</ProjectsH2>
         <ArrowLeft onClick={decrementCountCard}>
           <ArrowLeftIcon />
         </ArrowLeft>
@@ -68,21 +68,23 @@ const Projects = () => {
             ></ProjectImage>
             <ProjectTitle>Calendar App</ProjectTitle>
             <ProjectDescription>
-              Aplicación de eventos en el calendario con el stack MERN
+              {language
+                ? 'Aplicación de eventos en el calendario con el stack MERN'
+                : 'Events app in the calendar with the MERN stack'}
             </ProjectDescription>
             <ButtonLink
               webicon='true'
               href='https://ajcrauseo-calendar-app-mern.herokuapp.com/'
               target='_blank'
             >
-              Visitar <WebIcon />
+              {language ? 'Visitar' : 'Website'} <WebIcon />
             </ButtonLink>
             <ButtonLink
               githubicon='true'
               href='https://github.com/ajcrauseo/calendarApp-MERN'
               target='_blank'
             >
-              Ver Código <GitHubIcon />
+              {language ? 'Ver Código' : 'View Code'} <GitHubIcon />
             </ButtonLink>
           </ProjectCard>
 
@@ -95,21 +97,23 @@ const Projects = () => {
             ></ProjectImage>
             <ProjectTitle>Toti Store</ProjectTitle>
             <ProjectDescription>
-              Toti Store - Ecommerce con React.js y Commerce.js
+              {language
+                ? 'Toti Store - Ecommerce con React.js y Commerce.js'
+                : 'Toti Store - Ecommerce with React.js and Commerce.js'}
             </ProjectDescription>
             <ButtonLink
               webicon='true'
               href='https://totistore.netlify.app/'
               target='_blank'
             >
-              Visitar <WebIcon />
+              {language ? 'Visitar' : 'Website'} <WebIcon />
             </ButtonLink>
             <ButtonLink
               githubicon='true'
               href='https://github.com/ajcrauseo/toti-store'
               target='_blank'
             >
-              Ver Código <GitHubIcon />
+              {language ? 'Ver Código' : 'View Code'} <GitHubIcon />
             </ButtonLink>
           </ProjectCard>
 
@@ -122,21 +126,23 @@ const Projects = () => {
             ></ProjectImage>
             <ProjectTitle>Rick and Morty Characters</ProjectTitle>
             <ProjectDescription>
-              Single Page Application con JavaScript Vanilla que consume una API
+              {language
+                ? 'Single Page Application con JavaScript Vanilla que consume una API'
+                : 'Single Page Application with JavaScript Vanilla'}
             </ProjectDescription>
             <ButtonLink
               webicon='true'
               href='https://ajcrauseo-rick-and-morty-characters.netlify.app/'
               target='blank'
             >
-              Visitar <WebIcon />
+              {language ? 'Visitar' : 'Website'} <WebIcon />
             </ButtonLink>
             <ButtonLink
               githubicon='true'
               href='https://github.com/ajcrauseo/rick-and-morty-characters'
               target='blank'
             >
-              Ver Código <GitHubIcon />
+              {language ? 'Ver Código' : 'View Code'} <GitHubIcon />
             </ButtonLink>
           </ProjectCard>
 
@@ -149,21 +155,23 @@ const Projects = () => {
             ></ProjectImage>
             <ProjectTitle>To Do List</ProjectTitle>
             <ProjectDescription>
-              Lista de cosas que hacer, hecha con JavaScript Vanilla
+              {language
+                ? 'Lista de cosas que hacer, hecha con JavaScript Vanilla'
+                : 'To do List made with JavaScript Vanilla'}
             </ProjectDescription>
             <ButtonLink
               webicon='true'
               href='https://ajcrauseo.github.io/todo-list/'
               target='blank'
             >
-              Visitar <WebIcon />
+              {language ? 'Visitar' : 'Website'} <WebIcon />
             </ButtonLink>
             <ButtonLink
               githubicon='true'
               href='https://github.com/ajcrauseo/todo-list'
               target='blank'
             >
-              Ver Código <GitHubIcon />
+              {language ? 'Ver Código' : 'View Code'} <GitHubIcon />
             </ButtonLink>
           </ProjectCard>
 
@@ -176,25 +184,25 @@ const Projects = () => {
             ></ProjectImage>
             <ProjectTitle>EasyBank</ProjectTitle>
             <ProjectDescription>
-              Easybank es un proyecto de frontendmentor.io de una landing page.
-              Es una página estática
+              {language
+                ? 'Easybank es un proyecto de frontendmentor.io de una landing page. Es una página estática'
+                : 'Easybank is a frontendmentor.io project about a landing page. Is a static page'}
             </ProjectDescription>
             <ButtonLink
               webicon='true'
               href='https://ajcrauseo.github.io/easybank/'
               target='blank'
             >
-              Visitar <WebIcon />
+              {language ? 'Visitar' : 'Website'} <WebIcon />
             </ButtonLink>
             <ButtonLink
               githubicon='true'
               href='https://github.com/ajcrauseo/easybank'
               target='blank'
             >
-              Ver Código <GitHubIcon />
+              {language ? 'Ver Código' : 'View Code'} <GitHubIcon />
             </ButtonLink>
           </ProjectCard>
-
         </CardsWrapper>
 
         <ArrowRight onClick={incrementCountCard}>

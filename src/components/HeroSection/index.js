@@ -16,7 +16,7 @@ import { ButtonScroll } from '../ButtonScrollElement';
 // Assets
 import Video from '../../assets/videos/background-hero-editado3.mp4';
 
-const Hero = () => {
+const Hero = ({ language }) => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -31,7 +31,9 @@ const Hero = () => {
       <HeroContent>
         <HeroH1>Antony J. Cabeza Rauseo</HeroH1>
         <HeroP>
-          Desarrollador Web especializado en JavaScript con el stack MERN
+          {language
+            ? 'Desarrollador JavaScript con React.js y Node.js'
+            : 'JavaScript Developer with React.js and Node.js'}
         </HeroP>
         <HeroBtnWrapper>
           <ButtonScroll
@@ -44,7 +46,8 @@ const Hero = () => {
             spy={true}
             offset={-80}
           >
-            Conocer más {hover ? <ArrowForward /> : <ArrowRight />}
+            {language ? 'Conocer más' : 'Know more about me'}
+            {hover ? <ArrowForward /> : <ArrowRight />}
           </ButtonScroll>
         </HeroBtnWrapper>
       </HeroContent>

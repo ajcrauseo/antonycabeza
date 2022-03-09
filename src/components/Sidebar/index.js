@@ -10,9 +10,10 @@ import {
   SidebarLink,
   SideBtnWrap,
   SidebarRoute,
+  SidebarLanguageBtn,
 } from './SidebarElements';
 
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ isOpen, toggle, language, changeLanguage }) => {
   return (
     <>
       <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -27,10 +28,9 @@ const Sidebar = ({ isOpen, toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              
               offset={-80}
             >
-              Acerca de mí
+              {language ? 'Acerca de mí' : 'About me'}
             </SidebarLink>
             <SidebarLink
               to='proyectos'
@@ -38,10 +38,9 @@ const Sidebar = ({ isOpen, toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              
               offset={-80}
             >
-              Proyectos
+              {language ? 'Proyectos' : 'Projects'}
             </SidebarLink>
             <SidebarLink
               to='contacto'
@@ -49,11 +48,14 @@ const Sidebar = ({ isOpen, toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              
               offset={-80}
             >
-              Contacto
+              {language ? 'Contacto' : 'Contact'}
             </SidebarLink>
+            <SidebarLanguageBtn type='button' onClick={changeLanguage}>
+              {language ? 'Cambiar idioma' : 'Change language'}
+              <span>{language ? '🇬🇧' : '🇪🇸'}</span>
+            </SidebarLanguageBtn>
           </SidebarMenu>
         </SidebarWrapper>
         <SideBtnWrap>
@@ -62,7 +64,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             target='blank'
             onClick={toggle}
           >
-            Descargar CV
+            {language ? 'Descargar CV' : 'Download CV'}
           </SidebarRoute>
         </SideBtnWrap>
       </SidebarContainer>

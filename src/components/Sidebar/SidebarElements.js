@@ -67,6 +67,33 @@ export const SidebarLink = styled(LinkS)`
   }
 `;
 
+export const SidebarLanguageBtn = styled.button`
+  color: #efefef;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  color: #efefef;
+  cursor: pointer;
+
+  &:hover {
+    color: #004191;
+    transition: 0.2s ease-in-out;
+  }
+
+  & span {
+    margin-left: 8px;
+  }
+`;
+
 export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;

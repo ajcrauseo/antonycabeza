@@ -112,3 +112,32 @@ export const NavBtnLink = styled.a`
     color: #004191;
   }
 `;
+
+export const LanguageButton = styled.button`
+  color: #efefef;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    color: #fff;
+    border-bottom: 3px solid #004191;
+    transition: 0.2s ease-in-out;
+  }
+  &.active {
+    border-bottom: 3px solid #004191;
+    transition: 0.2s ease-in-out;
+  }
+
+  & span {
+    margin-left: 8px;
+  }
+`
