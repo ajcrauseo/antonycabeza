@@ -30,9 +30,7 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Antony J. Cabeza Rauseo</HeroH1>
-        <HeroP>
-          Desarrollador Web especializado en JavaScript con el stack MERN
-        </HeroP>
+        <HeroP>Desarrollador JavaScript con React.js y Node.js</HeroP>
         <HeroBtnWrapper>
           <ButtonScroll
             to='acerca'
