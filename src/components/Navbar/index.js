@@ -86,7 +86,11 @@ const Navbar = ({ toggle, language, changeLanguage }) => {
           </NavMenu>
           <NavBtn>
             <NavBtnLink
-              href='https://drive.google.com/file/d/1aPLHsP105nZLRoPrt6VB3y_cWi7iCaIh/view?usp=sharing'
+              href={
+                language
+                  ? 'https://drive.google.com/file/d/1aPLHsP105nZLRoPrt6VB3y_cWi7iCaIh/view?usp=sharing'
+                  : 'https://drive.google.com/file/d/15iELytdO1ans6Bi8P8X1X9qepurwBCJE/view?usp=sharing '
+              }
               target='blank'
             >
               {language ? 'Descargar CV' : 'Download CV'}

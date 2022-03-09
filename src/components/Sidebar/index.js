@@ -60,7 +60,11 @@ const Sidebar = ({ isOpen, toggle, language, changeLanguage }) => {
         </SidebarWrapper>
         <SideBtnWrap>
           <SidebarRoute
-            href='https://drive.google.com/file/d/1aPLHsP105nZLRoPrt6VB3y_cWi7iCaIh/view?usp=sharing'
+            href={
+              language
+                ? 'https://drive.google.com/file/d/1aPLHsP105nZLRoPrt6VB3y_cWi7iCaIh/view?usp=sharing'
+                : 'https://drive.google.com/file/d/15iELytdO1ans6Bi8P8X1X9qepurwBCJE/view?usp=sharing '
+            }
             target='blank'
             onClick={toggle}
           >
