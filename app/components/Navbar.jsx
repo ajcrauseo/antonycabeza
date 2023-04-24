@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
+
 import React, { useEffect, useState } from 'react';
 
 import { styles } from '../styles';
@@ -17,8 +19,8 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          href='/'
+        <ScrollLink
+          to='/'
           className='flex items-center gap-2'
           onClick={() => {
             setActive('');
@@ -30,7 +32,7 @@ const Navbar = () => {
             Antony Cabeza &nbsp;
             <span className='sm:block hidden'>|&nbsp; Frontend Developer</span>
           </p>
-        </Link>
+        </ScrollLink>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map(({ id, title }) => (
             <li
@@ -42,7 +44,16 @@ const Navbar = () => {
                 setActive(title);
               }}
             >
-              <Link href={`#${id}`}>{title}</Link>
+              <ScrollLink
+                activeClass='active'
+                to={id}
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                {title}
+              </ScrollLink>
             </li>
           ))}
         </ul>
@@ -74,7 +85,16 @@ const Navbar = () => {
                     setActive(title);
                   }}
                 >
-                  <Link href={`#${id}`}>{title}</Link>
+                  <ScrollLink
+                    activeClass='active'
+                    to={id}
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    {title}
+                  </ScrollLink>
                 </li>
               ))}
             </ul>
