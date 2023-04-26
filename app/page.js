@@ -10,6 +10,9 @@ import {
   StarsCanvas,
 } from './components';
 
+const { EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, EMAIL_JS_PUBLIC_KEY } =
+  process.env;
+
 export default function HomePage() {
   return (
     <main className='relative z-0 bg-primary'>
@@ -23,7 +26,11 @@ export default function HomePage() {
       <Works />
       <Feedbacks />
       <div className='relative z-0'>
-        <Contact />
+        <Contact
+          EMAIL_JS_SERVICE_ID={EMAIL_JS_SERVICE_ID}
+          EMAIL_JS_TEMPLATE_ID={EMAIL_JS_TEMPLATE_ID}
+          EMAIL_JS_PUBLIC_KEY={EMAIL_JS_PUBLIC_KEY}
+        />
         <StarsCanvas />
       </div>
     </main>

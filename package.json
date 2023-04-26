@@ -24,6 +24,7 @@
     "react-parallax-tilt": "^1.7.129",
     "react-scroll": "^1.8.9",
     "react-vertical-timeline-component": "^3.6.0",
+    "sweetalert2": "^11.7.3",
     "tailwindcss": "3.3.1",
     "three": "^0.151.3"
   },
