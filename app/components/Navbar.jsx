@@ -1,9 +1,8 @@
 'use client';
 
-import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants/constants';
@@ -24,6 +23,7 @@ const Navbar = () => {
           className='flex items-center gap-2'
           onClick={() => {
             setActive('');
+            setToggle(false);
             window.scrollTo(0, 0);
           }}
         >
@@ -71,7 +71,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? 'hidden' : 'flex'
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl `}
+            } p-6 bg-tertiary absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl `}
           >
             <ul className='list-none flex flex-col justify-end items-start gap-4'>
               {navLinks.map(({ id, title }) => (
@@ -80,10 +80,6 @@ const Navbar = () => {
                   className={`${
                     active === title ? 'text-white' : 'text-secondary'
                   } font-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(title);
-                  }}
                 >
                   <ScrollLink
                     activeClass='active'
@@ -92,6 +88,10 @@ const Navbar = () => {
                     smooth={true}
                     offset={50}
                     duration={500}
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(title);
+                    }}
                   >
                     {title}
                   </ScrollLink>

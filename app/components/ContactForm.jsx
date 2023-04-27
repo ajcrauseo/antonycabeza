@@ -121,7 +121,7 @@ const ContactForm = ({
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className='mt-12 flex flex-col gap-8'
+        className='mt-12 xl:mt-8 flex flex-col gap-8'
       >
         {/* First Input */}
         <label className='flex flex-col'>
@@ -151,7 +151,7 @@ const ContactForm = ({
         <label className='flex flex-col'>
           <span className='text-white font-medium mb-4'>Your Message</span>
           <textarea
-            rows={7}
+            rows={3}
             name='message'
             value={form.message}
             onChange={handleChange}
