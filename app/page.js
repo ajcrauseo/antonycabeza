@@ -2,10 +2,7 @@ import {
   Hero,
   Navbar,
   About,
-  Tech,
-  Experience,
   Works,
-  Feedbacks,
   Contact,
   StarsCanvas,
   Footer,
@@ -24,7 +21,7 @@ export default function HomePage() {
       <About />
       {/* <Experience /> */}
       <Works />
-      <Tech />
+      {/* <Tech /> */}
       {/* <Feedbacks /> */}
       <div className='relative z-0'>
         <Contact

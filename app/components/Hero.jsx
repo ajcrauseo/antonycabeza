@@ -1,5 +1,5 @@
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+// import { ComputersCanvas } from './canvas';
 
 import ScrollCTA from './ScrollCTA';
 
