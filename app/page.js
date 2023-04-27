@@ -8,6 +8,7 @@ import {
   Feedbacks,
   Contact,
   StarsCanvas,
+  Footer,
 } from './components';
 
 const { EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, EMAIL_JS_PUBLIC_KEY } =
@@ -21,10 +22,10 @@ export default function HomePage() {
         <Hero />
       </div>
       <About />
-      <Experience />
-      <Tech />
+      {/* <Experience /> */}
       <Works />
-      <Feedbacks />
+      <Tech />
+      {/* <Feedbacks /> */}
       <div className='relative z-0'>
         <Contact
           EMAIL_JS_SERVICE_ID={EMAIL_JS_SERVICE_ID}
@@ -33,6 +34,7 @@ export default function HomePage() {
         />
         <StarsCanvas />
       </div>
+      <Footer />
     </main>
   );
 }

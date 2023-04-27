@@ -25,7 +25,7 @@ const ProjectCard = ({
       <Tilt className='bg-tertiary p-5 rounded-2xl min-w-[360px] sm:w-[360px] w-full'>
         <div className='relative w-full h-[230px]'>
           <Image
-            src={image.src}
+            src={image}
             alt={name}
             width={300}
             height={300}
@@ -73,7 +73,7 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <SectionWrapper>
-      <span className='hash-span'>&nbsp;</span>
+      <span className='hash-span' id='work'>&nbsp;</span>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
