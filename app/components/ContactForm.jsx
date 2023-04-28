@@ -114,14 +114,14 @@ const ContactForm = ({
   return (
     <motion.div
       variants={slideIn('left', 'tween', 0.2, 1)}
-      className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+      className='mx-auto flex flex-col bg-black-100 p-8 rounded-2xl w-full max-w-[700px] xl:max-w-[700px]'
     >
       <p className={`${styles.sectionSubText}`}>Get in touch</p>
       <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className='mt-12 xl:mt-8 flex flex-col gap-8'
+        className='mt-4 flex flex-col gap-6'
       >
         {/* First Input */}
         <label className='flex flex-col'>

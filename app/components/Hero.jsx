@@ -23,7 +23,6 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      {/* <ComputersCanvas /> */}
       <ScrollCTA />
     </section>
   );

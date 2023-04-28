@@ -14,23 +14,23 @@ import { SectionWrapper } from '../hoc';
 import { textVariant } from '../lib/motion';
 import Image from 'next/image';
 
-const WorkIcon = ({ experience }) => (
-  <div className='flex justify-center items-center w-full h-full'>
-    <Image
-      src={experience.icon}
-      alt={experience.company_name}
-      className='w-[60%] h-[60%] object-contain'
-    />
-  </div>
-);
+// const WorkIcon = ({ experience }) => (
+//   <div className='flex justify-center items-center w-full h-full'>
+//     <Image
+//       src={experience.icon}
+//       alt={experience.company_name}
+//       className='w-[60%] h-[60%] object-contain'
+//     />
+//   </div>
+// );
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{ background: '#1d1836', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid #232631' }}
     date={experience.date}
-    iconStyle={{ background: experience.iconBg }}
-    icon={<WorkIcon experience={experience} />}
+    // iconStyle={{ background: experience.iconBg }}
+    // icon={<WorkIcon experience={experience} />}
   >
     <div>
       <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
