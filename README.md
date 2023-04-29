@@ -1,6 +1,6 @@
-# Antony Cabeza's 3D Portfolio
+# Antony Cabeza's Portfolio
 
-This is a personal portfolio build with Next.js and Three.js
+This is a personal portfolio build with Next.js and Framer Motion
 
 Link to portfolio: https://www.antonycabeza.com
 

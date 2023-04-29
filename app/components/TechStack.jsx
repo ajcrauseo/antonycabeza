@@ -7,7 +7,7 @@ const TechStack = () => {
   return (
     <motion.div
       variants={slideIn('left', 'tween', 0.2, 1)}
-      className='w-full mt-8 flex flex-col gap-4 items-center lg:flex-row lg:mt-32 lg:justify-center'
+      className='w-full mt-4 flex flex-col gap-4 items-center lg:flex-row lg:mt-32 lg:justify-center'
     >
       <p className='border-b-2 border-accent w-fit pb-4 lg:text-xl lg:pb-0 lg:pr-4 lg:border-b-0 lg:border-r-2'>Tech Stack</p>
 
