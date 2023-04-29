@@ -15,7 +15,7 @@ const TechStack = () => {
         Tech Stack
       </p>
 
-      <ul className='flex gap-4 lg:gap-6'>
+      <ul className='flex flex-wrap justify-center gap-4 lg:gap-6'>
         <li>
           <svg
             fill='#fff'
