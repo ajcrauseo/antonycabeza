@@ -31,11 +31,11 @@ const Navbar = () => {
           <Image src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Antony Cabeza &nbsp;
-            <span className='sm:block hidden'>|&nbsp; Frontend Developer</span>
+            <span className='lg:block hidden'>|&nbsp; Frontend Developer</span>
           </p>
         </ScrollLink>
         {/* Links en Desktop */}
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden md:flex flex-row gap-10'>
           {navLinks.map(({ id, title }) => (
             <li
               key={id}
@@ -60,7 +60,7 @@ const Navbar = () => {
           ))}
         </ul>
         {/* Mobile Navigation Bar */}
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='md:hidden flex flex-1 justify-end items-center'>
           {/* Iconos menu y close */}
 
           <Image

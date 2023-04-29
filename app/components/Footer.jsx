@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BsLinkedin, BsGithub, BsTwitter, BsInstagram } from 'react-icons/bs';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { footerLinks } from '../constants/constants';
 
 const Footer = () => {
@@ -9,27 +9,17 @@ const Footer = () => {
       <div className='flex justify-around mt-6 w-full md:w-1/2'>
         <Link
           href={footerLinks[0].url}
-          className='transition duration-150 ease-out hover:ease-in hover:text-[#915eff]'
+          target='_blank'
+          className='transition duration-150 ease-out hover:ease-in hover:text-accent'
         >
           <BsLinkedin className='w-6 h-6' />
         </Link>
         <Link
           href={footerLinks[1].url}
-          className='transition duration-150 ease-out hover:ease-in hover:text-[#915eff]'
+          target='_blank'
+          className='transition duration-150 ease-out hover:ease-in hover:text-accent'
         >
           <BsGithub className='w-6 h-6' />
-        </Link>
-        <Link
-          href={footerLinks[2].url}
-          className='transition duration-150 ease-out hover:ease-in hover:text-[#915eff]'
-        >
-          <BsTwitter className='w-6 h-6' />
-        </Link>
-        <Link
-          href={footerLinks[3].url}
-          className='transition duration-150 ease-out hover:ease-in hover:text-[#915eff]'
-        >
-          <BsInstagram className='w-6 h-6' />
         </Link>
       </div>
     </footer>

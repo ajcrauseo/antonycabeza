@@ -8,6 +8,27 @@ import {
   totiStore,
 } from '@public/assets';
 
+import {
+  html5,
+  css3,
+  javascript,
+  typescript,
+  tailwindcss,
+  react,
+  nextdotjs,
+  nodedotjs,
+  git,
+  html5Colored,
+  css3Colored,
+  javascriptColored,
+  typescriptColored,
+  tailwindcssColored,
+  reactColored,
+  nextdotjsColored,
+  nodedotjsColored,
+  gitColored,
+} from '@public/assets/techs';
+
 export const navLinks = [
   {
     id: 'home',
@@ -43,6 +64,84 @@ const services = [
   {
     title: 'Backend Developer',
     icon: backend,
+  },
+];
+
+const techs = [
+  {
+    name: 'HTML',
+    icon: html5,
+  },
+  {
+    name: 'CSS',
+    icon: css3,
+  },
+  {
+    name: 'JavaScript',
+    icon: javascript,
+  },
+  {
+    name: 'TypeScript',
+    icon: typescript,
+  },
+  {
+    name: 'Tailwind CSS',
+    icon: tailwindcss,
+  },
+  {
+    name: 'React',
+    icon: react,
+  },
+  {
+    name: 'Next',
+    icon: nextdotjs,
+  },
+  {
+    name: 'Node',
+    icon: nodedotjs,
+  },
+  {
+    name: 'Git',
+    icon: git,
+  },
+];
+
+const techsWithColor = [
+  {
+    name: 'HTML with Color',
+    icon: html5Colored,
+  },
+  {
+    name: 'CSS with Color',
+    icon: css3Colored,
+  },
+  {
+    name: 'JavaScript with Color',
+    icon: javascriptColored,
+  },
+  {
+    name: 'TypeScript with Color',
+    icon: typescriptColored,
+  },
+  {
+    name: 'Tailwind CSS with Color',
+    icon: tailwindcssColored,
+  },
+  {
+    name: 'React with Color',
+    icon: reactColored,
+  },
+  {
+    name: 'Next with Color',
+    icon: nextdotjsColored,
+  },
+  {
+    name: 'Node with Color',
+    icon: nodedotjsColored,
+  },
+  {
+    name: 'Git with Color',
+    icon: gitColored,
   },
 ];
 
@@ -177,4 +276,4 @@ const footerLinks = [
   { name: 'Instagram', url: 'https://www.instagram.com/ajcrauseo/' },
 ];
 
-export { services, experiences, projects, footerLinks };
+export { services, experiences, projects, footerLinks, techs, techsWithColor };

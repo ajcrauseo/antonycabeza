@@ -5,6 +5,17 @@ import Experience from './Experience';
 import Works from './Works';
 import Contact from './Contact';
 import ContactForm from './ContactForm';
+import TechStack from './TechStack';
 import Footer from './Footer';
 
-export { Hero, Navbar, About, Experience, Works, Contact, ContactForm, Footer };
+export {
+  Hero,
+  Navbar,
+  About,
+  Experience,
+  Works,
+  Contact,
+  ContactForm,
+  TechStack,
+  Footer,
+};

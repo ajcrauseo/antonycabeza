@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const ScrollCTA = () => {
   return (
-    <div className='absolute xs:bottom-10 bottom-16 w-full flex justify-center items-center'>
+    <div className='absolute bottom-6 w-full flex justify-center items-center'>
       <ScrollLink
         activeClass='active'
         to='about'
