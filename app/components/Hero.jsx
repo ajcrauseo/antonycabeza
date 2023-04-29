@@ -20,7 +20,7 @@ const Hero = () => {
         <Image
           src={antonyCabezaPhoto}
           alt='Antony Cabeza'
-          className='w-[240px] h-[240px] md:w-[300px] md:h-[300px] lg:w-[380px] lg:h-[380px] xl:w-[420px]  xl:h-[420px]'
+          className='w-[240px] h-[240px] md:w-[300px] md:h-[300px] lg:w-[380px] lg:h-[380px] xl:w-[420px] xl:h-[420px]'
         />
         {/* Presentacion */}
         <div className='flex gap-6 items-start'>
