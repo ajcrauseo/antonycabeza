@@ -1,15 +1,19 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { slideIn } from '../lib/motion';
 
 const TechStack = () => {
   return (
     <motion.div
-      variants={slideIn('left', 'tween', 0.2, 1)}
+      // variants={{ hidden: { x: '-100%' }, visible: { x: 0 } }}
+      initial={{ x: '-100%' }}
+      animate={{ x: 0 }}
+      transition={{ duration: 1 }}
       className='w-full mt-4 flex flex-col gap-4 items-center lg:flex-row lg:mt-12 lg:justify-center 2xl:mt-20'
     >
-      <p className='border-b-2 border-accent w-fit pb-4 lg:text-xl lg:pb-0 lg:pr-4 lg:border-b-0 lg:border-r-2'>Tech Stack</p>
+      <p className='border-b-2 border-accent w-fit pb-4 lg:text-xl lg:pb-0 lg:pr-4 lg:border-b-0 lg:border-r-2'>
+        Tech Stack
+      </p>
 
       <ul className='flex gap-4 lg:gap-6'>
         <li>

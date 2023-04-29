@@ -1,7 +1,10 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import { motion } from 'framer-motion';
 
 import ScrollCTA from './ScrollCTA';
 
@@ -13,8 +16,14 @@ import { TechStack } from '.';
 
 const Hero = () => {
   return (
-    <section id='home' className='relative w-full h-screen mx-auto flex flex-col overflow-hidden lg:justify-center'>
-      <div
+    <section
+      id='home'
+      className='relative w-full h-screen mx-auto flex flex-col overflow-hidden lg:justify-center'
+    >
+      <motion.div
+        initial={{ y: '-150%' }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
         className={`${styles.paddingX} pt-[120px] w-full flex flex-col items-center gap-6 lg:flex-row-reverse lg:justify-evenly lg:pt-0`}
       >
         <Image
@@ -58,7 +67,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <TechStack />
       <ScrollCTA />
     </section>
