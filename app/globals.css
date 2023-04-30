@@ -19,6 +19,27 @@
   display: block;
 }
 
+::-webkit-scrollbar {
+  width: 0.75em;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(49, 49, 54, 0.5);
+  border-radius: 100vw;
+  margin-block: 0.2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #080ec941;
+  border-radius: 100vw;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d15ff5d;
+  border-radius: 100vw;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
