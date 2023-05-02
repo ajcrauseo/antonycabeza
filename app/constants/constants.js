@@ -211,7 +211,7 @@ const projects = [
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'nodejs',
         color: 'green-text-gradient',
       },
       {
@@ -237,7 +237,7 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'rapidapi',
+        name: 'rapid api',
         color: 'pink-text-gradient',
       },
     ],
