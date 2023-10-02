@@ -11,6 +11,7 @@ import close from './close.svg';
 import calendarApp from './calendar-app.png';
 import cryptoverse from './cryptoverse.png';
 import totiStore from './toti-store.png';
+import carhub from './carhub.png';
 
 export {
   logo,
@@ -25,4 +26,5 @@ export {
   calendarApp,
   cryptoverse,
   totiStore,
+  carhub
 };

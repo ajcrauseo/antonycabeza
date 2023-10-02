@@ -6,6 +6,7 @@ import {
   calendarApp,
   cryptoverse,
   totiStore,
+  carhub
 } from '@public/assets';
 
 import {
@@ -222,6 +223,28 @@ const projects = [
     image: calendarApp,
     source_code_link: 'https://github.com/ajcrauseo/Calendar-App-API',
     project_link: 'https://toti-calendar-app.netlify.app/',
+  },
+  {
+    name: 'Car Hub',
+    description:
+      'Web application allows you to search cars with differents manufacturers and models, and filter by fuel and year.',
+    tags: [
+      {
+        name: 'nextjs 13',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'rapid api',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: carhub,
+    source_code_link: 'https://github.com/ajcrauseo/car-hub/',
+    project_link: 'https://car-hub-zeta-ten.vercel.app/',
   },
   {
     name: 'Cryptoverse',
