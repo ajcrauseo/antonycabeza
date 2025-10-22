@@ -12,6 +12,7 @@ import calendarApp from './calendar-app.png';
 import cryptoverse from './cryptoverse.png';
 import totiStore from './toti-store.png';
 import carhub from './carhub.png';
+import naturalbrows from './naturalbrows.png';
 
 export {
   logo,
@@ -26,5 +27,6 @@ export {
   calendarApp,
   cryptoverse,
   totiStore,
-  carhub
+  carhub,
+  naturalbrows
 };

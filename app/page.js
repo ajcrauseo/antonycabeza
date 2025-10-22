@@ -15,11 +15,11 @@ export default function HomePage() {
       <Works />
 
       <div className='relative z-0'>
-        <Contact
+        {/* <Contact
           EMAIL_JS_SERVICE_ID={EMAIL_JS_SERVICE_ID}
           EMAIL_JS_TEMPLATE_ID={EMAIL_JS_TEMPLATE_ID}
           EMAIL_JS_PUBLIC_KEY={EMAIL_JS_PUBLIC_KEY}
-        />
+        /> */}
       </div>
       <Footer />
     </main>

@@ -5,8 +5,7 @@ import {
   web,
   calendarApp,
   cryptoverse,
-  totiStore,
-  carhub
+  naturalbrows
 } from '@public/assets';
 
 import {
@@ -43,23 +42,23 @@ export const navLinks = [
     id: 'work',
     title: 'Work',
   },
-  {
-    id: 'contact',
-    title: 'Contact',
-  },
+  // {
+  //   id: 'contact',
+  //   title: 'Contact',
+  // },
 ];
 
 const services = [
-  // {
-  //   title: 'Web Developer',
-  //   icon: web,
-  // },
+  {
+    title: 'Web Developer',
+    icon: web,
+  },
   {
     title: 'Frontend Developer',
     icon: creator,
   },
   {
-    title: 'React Developer',
+    title: 'API Developer',
     icon: mobile,
   },
   {
@@ -146,60 +145,60 @@ const techsWithColor = [
   },
 ];
 
-const experiences = [
-  {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    // icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    // icon: tesla,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    // icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    // icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-];
+// const experiences = [
+//   {
+//     title: 'React.js Developer',
+//     company_name: 'Starbucks',
+//     // icon: starbucks,
+//     iconBg: '#383E56',
+//     date: 'March 2020 - April 2021',
+//     points: [
+//       'Developing and maintaining web applications using React.js and other related technologies.',
+//       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+//       'Implementing responsive design and ensuring cross-browser compatibility.',
+//       'Participating in code reviews and providing constructive feedback to other developers.',
+//     ],
+//   },
+//   {
+//     title: 'React Native Developer',
+//     company_name: 'Tesla',
+//     // icon: tesla,
+//     iconBg: '#E6DEDD',
+//     date: 'Jan 2021 - Feb 2022',
+//     points: [
+//       'Developing and maintaining web applications using React.js and other related technologies.',
+//       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+//       'Implementing responsive design and ensuring cross-browser compatibility.',
+//       'Participating in code reviews and providing constructive feedback to other developers.',
+//     ],
+//   },
+//   {
+//     title: 'Web Developer',
+//     company_name: 'Shopify',
+//     // icon: shopify,
+//     iconBg: '#383E56',
+//     date: 'Jan 2022 - Jan 2023',
+//     points: [
+//       'Developing and maintaining web applications using React.js and other related technologies.',
+//       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+//       'Implementing responsive design and ensuring cross-browser compatibility.',
+//       'Participating in code reviews and providing constructive feedback to other developers.',
+//     ],
+//   },
+//   {
+//     title: 'Full stack Developer',
+//     company_name: 'Meta',
+//     // icon: meta,
+//     iconBg: '#E6DEDD',
+//     date: 'Jan 2023 - Present',
+//     points: [
+//       'Developing and maintaining web applications using React.js and other related technologies.',
+//       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+//       'Implementing responsive design and ensuring cross-browser compatibility.',
+//       'Participating in code reviews and providing constructive feedback to other developers.',
+//     ],
+//   },
+// ];
 
 const projects = [
   {
@@ -224,28 +223,28 @@ const projects = [
     source_code_link: 'https://github.com/ajcrauseo/Calendar-App-API',
     project_link: 'https://toti-calendar-app.netlify.app/',
   },
-  {
-    name: 'Car Hub',
-    description:
-      'Web application allows you to search cars with differents manufacturers and models, and filter by fuel and year.',
-    tags: [
-      {
-        name: 'nextjs 13',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'typescript',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'rapid api',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: carhub,
-    source_code_link: 'https://github.com/ajcrauseo/car-hub/',
-    project_link: 'https://car-hub-zeta-ten.vercel.app/',
-  },
+  // {
+  //   name: 'Car Hub',
+  //   description:
+  //     'Web application allows you to search cars with differents manufacturers and models, and filter by fuel and year.',
+  //   tags: [
+  //     {
+  //       name: 'nextjs 13',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       name: 'typescript',
+  //       color: 'green-text-gradient',
+  //     },
+  //     {
+  //       name: 'rapid api',
+  //       color: 'pink-text-gradient',
+  //     },
+  //   ],
+  //   image: carhub,
+  //   source_code_link: 'https://github.com/ajcrauseo/car-hub/',
+  //   project_link: 'https://car-hub-zeta-ten.vercel.app/',
+  // },
   {
     name: 'Cryptoverse',
     description:
@@ -269,27 +268,49 @@ const projects = [
     project_link: 'https://toti-cryptoverse.netlify.app/',
   },
   {
-    name: 'Toti Store',
+    name: 'NaturalBrows',
     description:
-      'Ecommerce with a list of products, a cart and checkout section.',
+      'Informative website to learn about the services offered by the company',
     tags: [
       {
-        name: 'react',
+        name: 'tailwindcss',
         color: 'blue-text-gradient',
       },
       {
-        name: 'commercejs',
+        name: 'nextjs',
         color: 'green-text-gradient',
       },
       {
-        name: 'material ui',
+        name: 'typescript',
         color: 'pink-text-gradient',
       },
     ],
-    image: totiStore,
-    source_code_link: 'https://github.com/ajcrauseo/toti-store',
-    project_link: 'https://totistore.netlify.app/',
+    image: naturalbrows,
+    source_code_link: 'https://github.com/ajcrauseo/',
+    project_link: 'https://www.naturalbrows.studio/',
   },
+  // {
+  //   name: 'Toti Store',
+  //   description:
+  //     'Ecommerce with a list of products, a cart and checkout section.',
+  //   tags: [
+  //     {
+  //       name: 'react',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       name: 'commercejs',
+  //       color: 'green-text-gradient',
+  //     },
+  //     {
+  //       name: 'material ui',
+  //       color: 'pink-text-gradient',
+  //     },
+  //   ],
+  //   image: totiStore,
+  //   source_code_link: 'https://github.com/ajcrauseo/toti-store',
+  //   project_link: 'https://totistore.netlify.app/',
+  // },
 ];
 
 const footerLinks = [
@@ -299,4 +320,4 @@ const footerLinks = [
   { name: 'Instagram', url: 'https://www.instagram.com/ajcrauseo/' },
 ];
 
-export { services, experiences, projects, footerLinks, techs, techsWithColor };
+export { services, projects, footerLinks, techs, techsWithColor };

@@ -41,12 +41,12 @@ const Hero = () => {
           {/* Hero Copy */}
           <div>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Frontend Developer
+              Full Stack Developer
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
               Hi I&apos;m <span className='text-accent'>Antony Cabeza</span>{' '}
               <br className='sm:block hidden' />
-              Frontend Developer with React
+              Full Stack Developer with Next.js and Node.js
             </p>
             {/* Links a RRSS */}
             <div className='flex gap-5 mt-8'>
