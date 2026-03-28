@@ -265,7 +265,7 @@ const projects = [
     ],
     image: cryptoverse,
     source_code_link: 'https://github.com/ajcrauseo/cryptoverse',
-    project_link: 'https://toti-cryptoverse.netlify.app/',
+    project_link: 'https://cryptoverse-ajcrauseo.vercel.app/',
   },
   {
     name: 'NaturalBrows',
