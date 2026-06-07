@@ -11,7 +11,7 @@ import ScrollCTA from './ScrollCTA';
 import { styles } from '../styles';
 import { footerLinks } from '../constants/constants';
 
-import antonyCabezaPhoto from '@public/assets/foto-me.png';
+import antonyCabezaPhoto from '@public/assets/foto-perfil-2026.png';
 import { TechStack } from '.';
 
 const Hero = () => {
