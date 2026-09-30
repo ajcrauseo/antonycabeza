@@ -7,6 +7,7 @@ import Contact from './Contact';
 import ContactForm from './ContactForm';
 import TechStack from './TechStack';
 import Footer from './Footer';
+import ProjectLinks from './ProjectLinks';
 
 export {
   Hero,
@@ -18,4 +19,5 @@ export {
   ContactForm,
   TechStack,
   Footer,
+  ProjectLinks,
 };

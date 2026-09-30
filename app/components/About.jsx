@@ -1,30 +1,25 @@
-'use client';
-
 import Image from 'next/image';
-import Tilt from 'react-parallax-tilt';
-import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { services } from '../constants/constants';
 import { fadeIn, textVariant } from '../lib/motion';
 
-import { SectionWrapper } from '../hoc';
+import { MotionDiv, SectionWrapper, TiltCard } from '../hoc';
+
+const TILT_OPTIONS = {
+  max: 45,
+  scale: 1,
+  speed: 450,
+};
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className='md:w-[250px] w-full'>
-      <motion.div
+    <TiltCard options={TILT_OPTIONS} className='md:w-[250px] w-full'>
+      <MotionDiv
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
       >
-        <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
-          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-        >
+        <div className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
           <Image
             width={64}
             height={64}
@@ -36,8 +31,8 @@ const ServiceCard = ({ index, title, icon }) => {
             {title}
           </h3>
         </div>
-      </motion.div>
-    </Tilt>
+      </MotionDiv>
+    </TiltCard>
   );
 };
 
@@ -47,21 +42,21 @@ const About = () => {
       <span className='hash-span' id='about'>
         &nbsp;
       </span>
-      <motion.div variants={textVariant()}>
+      <MotionDiv variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
-      <motion.p
+      </MotionDiv>
+      <MotionDiv
+        as='p'
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I{"'"}m a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React with Next and
-        Node.js. I{"'"}m a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let{"'"}s work together to bring your ideas to
-        life!
-      </motion.p>
+        I am a technology enthusiast and a Computer Science student at UBA.
+        My technical background allows me to approach software development with a
+        logical and problem-solving mindset. I specialize in Full Stack development (Next.js, Node.js, Python),
+        and I am currently deepening my knowledge in software architecture, artificial intelligence, data analysis,
+        and process automation. Let&apos;s work together to bring your ideas to life!
+      </MotionDiv>
 
       <div className='mt-20 flex flex-wrap justify-center gap-10 2xl:mb-20'>
         {services.map((service, index) => (

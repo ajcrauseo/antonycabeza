@@ -1,15 +1,13 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
-import { motion } from 'framer-motion';
 
 import ScrollCTA from './ScrollCTA';
 
 import { styles } from '../styles';
 import { footerLinks } from '../constants/constants';
+import { MotionDiv } from '../hoc';
 
 import antonyCabezaPhoto from '@public/assets/foto-perfil-2026.png';
 import { TechStack } from '.';
@@ -20,7 +18,7 @@ const Hero = () => {
       id='home'
       className='relative w-full h-screen mx-auto flex flex-col overflow-hidden lg:justify-center'
     >
-      <motion.div
+      <MotionDiv
         initial={{ y: '-150%' }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
@@ -41,12 +39,12 @@ const Hero = () => {
           {/* Hero Copy */}
           <div>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Full Stack Developer
+              Electronics Technician | CS Student at UBA | Full Stack Developer
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              Hi I&apos;m <span className='text-accent'>Antony Cabeza</span>{' '}
+              Hi, I&apos;m <span className='text-accent'>Antony Cabeza</span>{' '}
               <br className='sm:block hidden' />
-              Full Stack Developer with Next.js and Node.js
+              Passionate about engineering, artificial intelligence, and automation
             </p>
             {/* Links a RRSS */}
             <div className='flex gap-5 mt-8'>
@@ -67,7 +65,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </MotionDiv>
       <TechStack />
       <ScrollCTA />
     </section>

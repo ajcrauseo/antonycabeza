@@ -200,51 +200,83 @@ const techsWithColor = [
 //   },
 // ];
 
+const experiences = [];
+
 const projects = [
   {
-    name: 'Calendar App',
+    name: 'Comisio',
     description:
-      'Web application to schedule events in the calendar, with authentication system',
+      'Robust application for managing appointments and commissions for independent professionals. Currently in development.',
     tags: [
       {
-        name: 'react',
+        name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
-        name: 'nodejs',
+        name: 'typescript',
         color: 'green-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'postgresql',
         color: 'pink-text-gradient',
       },
     ],
-    image: calendarApp,
-    source_code_link: 'https://github.com/ajcrauseo/Calendar-App-API',
-    project_link: 'https://toti-calendar-app.netlify.app/',
+    image: calendarApp, // Placeholder image
+    source_code_link: 'https://github.com/ajcrauseo/',
+    project_link: '#',
   },
-  // {
-  //   name: 'Car Hub',
-  //   description:
-  //     'Web application allows you to search cars with differents manufacturers and models, and filter by fuel and year.',
-  //   tags: [
-  //     {
-  //       name: 'nextjs 13',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'typescript',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'rapid api',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: carhub,
-  //   source_code_link: 'https://github.com/ajcrauseo/car-hub/',
-  //   project_link: 'https://car-hub-zeta-ten.vercel.app/',
-  // },
+  {
+    name: 'ComiTrack',
+    description:
+      'Robust application for managing inventory, technical services, and calculating sales commissions for independent professionals.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'postgresql',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'prisma',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: calendarApp, // Placeholder image
+    source_code_link: 'https://github.com/ajcrauseo/comitrack',
+    project_link: 'https://comitrack.vercel.app/',
+  },
+  {
+    name: 'iPhone Stock Manager',
+    description:
+      'Professional inventory management system for iPhone stock across multiple branches with advanced filtering and smart color validation.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'postgresql',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'prisma',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: calendarApp, // Placeholder image
+    source_code_link: 'https://github.com/ajcrauseo/iphones-stock',
+    project_link: 'https://iphones-stock.vercel.app/',
+  },
   {
     name: 'Cryptoverse',
     description:
@@ -268,26 +300,26 @@ const projects = [
     project_link: 'https://cryptoverse-ajcrauseo.vercel.app/',
   },
   {
-    name: 'NaturalBrows',
+    name: 'Calendar App',
     description:
-      'Informative website to learn about the services offered by the company',
+      'Web application to schedule events in the calendar, with an authentication system. This was my very first complete full-stack project, and I keep it here out of fondness to remember how much I have learned and grown since then.',
     tags: [
       {
-        name: 'tailwindcss',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'nextjs',
+        name: 'nodejs',
         color: 'green-text-gradient',
       },
       {
-        name: 'typescript',
+        name: 'mongodb',
         color: 'pink-text-gradient',
       },
     ],
-    image: naturalbrows,
-    source_code_link: 'https://github.com/ajcrauseo/',
-    project_link: 'https://www.naturalbrows.studio/',
+    image: calendarApp,
+    source_code_link: 'https://github.com/ajcrauseo/Calendar-App-API',
+    project_link: 'https://toti-calendar-app.netlify.app/',
   },
   // {
   //   name: 'Toti Store',
@@ -320,4 +352,4 @@ const footerLinks = [
   { name: 'Instagram', url: 'https://www.instagram.com/ajcrauseo/' },
 ];
 
-export { services, projects, footerLinks, techs, techsWithColor };
+export { services, projects, experiences, footerLinks, techs, techsWithColor };

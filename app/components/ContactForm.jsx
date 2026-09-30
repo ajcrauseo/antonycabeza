@@ -1,12 +1,12 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
 import { styles } from '../styles';
 import { slideIn } from '../lib/motion';
+import { MotionDiv } from '../hoc';
 
 const ContactForm = ({
   EMAIL_JS_SERVICE_ID,
@@ -112,7 +112,7 @@ const ContactForm = ({
   };
 
   return (
-    <motion.div
+    <MotionDiv
       variants={slideIn('left', 'tween', 0.2, 1)}
       className='mx-auto flex flex-col bg-black-100 p-8 rounded-2xl w-full max-w-[700px] xl:max-w-[700px]'
     >
@@ -166,7 +166,7 @@ const ContactForm = ({
           {loading ? 'Sending...' : 'Send'}
         </button>
       </form>
-    </motion.div>
+    </MotionDiv>
   );
 };
 
