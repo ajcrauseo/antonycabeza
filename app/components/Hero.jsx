@@ -39,7 +39,9 @@ const Hero = () => {
           {/* Hero Copy */}
           <div>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Electronics Technician | CS Student at UBA | Full Stack Developer
+              Electronics Technician | CS Student at UBA
+              <br />
+              <span className='text-accent'>Full Stack Developer</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
               Hi, I&apos;m <span className='text-accent'>Antony Cabeza</span>{' '}

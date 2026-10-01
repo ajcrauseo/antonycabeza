@@ -5,7 +5,10 @@ import {
   web,
   calendarApp,
   cryptoverse,
-  naturalbrows
+  naturalbrows,
+  comisio,
+  comitrack,
+  iphoneStock,
 } from '@public/assets';
 
 import {
@@ -221,7 +224,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: calendarApp, // Placeholder image
+    image: comisio, // Placeholder image
     source_code_link: 'https://github.com/ajcrauseo/',
     project_link: '#',
   },
@@ -247,7 +250,7 @@ const projects = [
         color: 'blue-text-gradient',
       },
     ],
-    image: calendarApp, // Placeholder image
+    image: comitrack, // Placeholder image
     source_code_link: 'https://github.com/ajcrauseo/comitrack',
     project_link: 'https://comitrack.vercel.app/',
   },
@@ -273,7 +276,7 @@ const projects = [
         color: 'blue-text-gradient',
       },
     ],
-    image: calendarApp, // Placeholder image
+    image: iphoneStock, // Placeholder image
     source_code_link: 'https://github.com/ajcrauseo/iphones-stock',
     project_link: 'https://iphones-stock.vercel.app/',
   },

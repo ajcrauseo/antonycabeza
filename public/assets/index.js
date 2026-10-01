@@ -10,8 +10,9 @@ import close from './close.svg';
 
 import calendarApp from './calendar-app.png';
 import cryptoverse from './cryptoverse.png';
-import totiStore from './toti-store.png';
-import carhub from './carhub.png';
+import comisio from './comisio.png';
+import comitrack from './comitrack.png';
+import iphoneStock from './iphone-stock.png';
 import naturalbrows from './naturalbrows.png';
 
 export {
@@ -26,7 +27,8 @@ export {
   web2,
   calendarApp,
   cryptoverse,
-  totiStore,
-  carhub,
+  comisio,
+  comitrack,
+  iphoneStock,
   naturalbrows
 };
