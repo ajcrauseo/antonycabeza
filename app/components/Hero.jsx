@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section
       id='home'
-      className='relative w-full h-screen mx-auto flex flex-col overflow-hidden lg:justify-center'
+      className='relative w-full min-h-screen mx-auto flex flex-col overflow-x-hidden lg:h-screen lg:justify-center'
     >
       <MotionDiv
         initial={{ y: '-150%' }}
