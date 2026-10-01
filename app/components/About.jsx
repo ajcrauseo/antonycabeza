@@ -38,10 +38,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <SectionWrapper>
-      <span className='hash-span' id='about'>
-        &nbsp;
-      </span>
+    <SectionWrapper id='about'>
       <MotionDiv variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>

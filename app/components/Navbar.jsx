@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -12,6 +12,22 @@ import { logo, menu, close } from '@/public/assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+
+  useEffect(() => {
+    if (!toggle) return;
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setToggle(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [toggle]);
 
   return (
     <nav
@@ -63,18 +79,24 @@ const Navbar = () => {
         <div className='md:hidden flex flex-1 justify-end items-center'>
           {/* Iconos menu y close */}
 
-          <Image
-            src={menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain cursor-pointer'
+          <button
+            type='button'
             onClick={() => {
               setToggle(!toggle);
             }}
-          />
+            aria-label='Open navigation menu'
+            aria-expanded={toggle}
+            aria-controls='mobile-navigation'
+            className='cursor-pointer'
+          >
+            <Image src={menu} alt='' className='w-[28px] h-[28px] object-contain' />
+          </button>
 
           <AnimatePresence>
             {toggle && (
-              <motion.div
+              <motion.nav
+                id='mobile-navigation'
+                aria-label='Mobile navigation'
                 className={`flex flex-col p-6 bg-tertiary absolute top-0 right-0 w-screen h-screen z-10`}
                 initial={{ x: '-100%' }}
                 animate={{ x: '0' }}
@@ -83,14 +105,16 @@ const Navbar = () => {
                   type: 'tween',
                 }}
               >
-                <Image
-                  src={close}
-                  alt='close'
-                  className='w-[28px] h-[28px] object-contain cursor-pointer self-end'
+                <button
+                  type='button'
                   onClick={() => {
                     setToggle(!toggle);
                   }}
-                />
+                  aria-label='Close navigation menu'
+                  className='self-end cursor-pointer'
+                >
+                  <Image src={close} alt='' className='w-[28px] h-[28px] object-contain' />
+                </button>
                 {/* Links en Mobile */}
                 <ul className='w-full h-full list-none py-6 flex flex-col justify-center items-center gap-20'>
                   {navLinks.map(({ id, title }) => (
@@ -115,7 +139,7 @@ const Navbar = () => {
                     </li>
                   ))}
                 </ul>
-              </motion.div>
+              </motion.nav>
             )}
           </AnimatePresence>
         </div>

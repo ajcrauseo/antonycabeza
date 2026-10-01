@@ -51,10 +51,7 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <SectionWrapper>
-      <span className='hash-span' id='work'>
-        &nbsp;
-      </span>
+    <SectionWrapper id='work'>
       <MotionDiv variants={textVariant()}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
