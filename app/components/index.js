@@ -3,8 +3,6 @@ import Navbar from './Navbar';
 import About from './About';
 import Experience from './Experience';
 import Works from './Works';
-import Contact from './Contact';
-import ContactForm from './ContactForm';
 import TechStack from './TechStack';
 import Footer from './Footer';
 import ProjectLinks from './ProjectLinks';
@@ -15,8 +13,6 @@ export {
   About,
   Experience,
   Works,
-  Contact,
-  ContactForm,
   TechStack,
   Footer,
   ProjectLinks,

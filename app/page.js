@@ -1,7 +1,4 @@
-import { Hero, Navbar, About, Works, Contact, Footer } from './components';
-
-const { EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, EMAIL_JS_PUBLIC_KEY } =
-  process.env;
+import { Hero, Navbar, About, Works, Footer } from './components';
 
 export default function HomePage() {
   return (
@@ -14,13 +11,6 @@ export default function HomePage() {
       <About />
       <Works />
 
-      <div className='relative z-0'>
-        {/* <Contact
-          EMAIL_JS_SERVICE_ID={EMAIL_JS_SERVICE_ID}
-          EMAIL_JS_TEMPLATE_ID={EMAIL_JS_TEMPLATE_ID}
-          EMAIL_JS_PUBLIC_KEY={EMAIL_JS_PUBLIC_KEY}
-        /> */}
-      </div>
       <Footer />
     </main>
   );
