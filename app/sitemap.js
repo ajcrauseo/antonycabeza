@@ -4,7 +4,7 @@ export default function sitemap() {
   return [
     {
       url: siteConfig.url,
-      lastModified: new Date(),
+      lastModified: siteConfig.lastUpdated,
       changeFrequency: 'monthly',
       priority: 1,
     },

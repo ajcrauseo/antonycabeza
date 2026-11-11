@@ -9,6 +9,8 @@ const ScrollCTA = () => {
       <ScrollLink
         activeClass='active'
         to='about'
+        href='#about'
+        aria-label='Scroll to About section'
         spy={true}
         smooth={true}
         offset={50}

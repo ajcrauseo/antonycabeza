@@ -5,32 +5,10 @@ import {
   web,
   calendarApp,
   cryptoverse,
-  naturalbrows,
   comisio,
   comitrack,
   iphoneStock,
 } from '@public/assets';
-
-import {
-  html5,
-  css3,
-  javascript,
-  typescript,
-  tailwindcss,
-  react,
-  nextdotjs,
-  nodedotjs,
-  git,
-  html5Colored,
-  css3Colored,
-  javascriptColored,
-  typescriptColored,
-  tailwindcssColored,
-  reactColored,
-  nextdotjsColored,
-  nodedotjsColored,
-  gitColored,
-} from '@public/assets/techs';
 
 export const navLinks = [
   {
@@ -65,141 +43,6 @@ const services = [
     icon: backend,
   },
 ];
-
-const techs = [
-  {
-    name: 'HTML',
-    icon: html5,
-  },
-  {
-    name: 'CSS',
-    icon: css3,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwindcss,
-  },
-  {
-    name: 'React',
-    icon: react,
-  },
-  {
-    name: 'Next',
-    icon: nextdotjs,
-  },
-  {
-    name: 'Node',
-    icon: nodedotjs,
-  },
-  {
-    name: 'Git',
-    icon: git,
-  },
-];
-
-const techsWithColor = [
-  {
-    name: 'HTML with Color',
-    icon: html5Colored,
-  },
-  {
-    name: 'CSS with Color',
-    icon: css3Colored,
-  },
-  {
-    name: 'JavaScript with Color',
-    icon: javascriptColored,
-  },
-  {
-    name: 'TypeScript with Color',
-    icon: typescriptColored,
-  },
-  {
-    name: 'Tailwind CSS with Color',
-    icon: tailwindcssColored,
-  },
-  {
-    name: 'React with Color',
-    icon: reactColored,
-  },
-  {
-    name: 'Next with Color',
-    icon: nextdotjsColored,
-  },
-  {
-    name: 'Node with Color',
-    icon: nodedotjsColored,
-  },
-  {
-    name: 'Git with Color',
-    icon: gitColored,
-  },
-];
-
-// const experiences = [
-//   {
-//     title: 'React.js Developer',
-//     company_name: 'Starbucks',
-//     // icon: starbucks,
-//     iconBg: '#383E56',
-//     date: 'March 2020 - April 2021',
-//     points: [
-//       'Developing and maintaining web applications using React.js and other related technologies.',
-//       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-//       'Implementing responsive design and ensuring cross-browser compatibility.',
-//       'Participating in code reviews and providing constructive feedback to other developers.',
-//     ],
-//   },
-//   {
-//     title: 'React Native Developer',
-//     company_name: 'Tesla',
-//     // icon: tesla,
-//     iconBg: '#E6DEDD',
-//     date: 'Jan 2021 - Feb 2022',
-//     points: [
-//       'Developing and maintaining web applications using React.js and other related technologies.',
-//       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-//       'Implementing responsive design and ensuring cross-browser compatibility.',
-//       'Participating in code reviews and providing constructive feedback to other developers.',
-//     ],
-//   },
-//   {
-//     title: 'Web Developer',
-//     company_name: 'Shopify',
-//     // icon: shopify,
-//     iconBg: '#383E56',
-//     date: 'Jan 2022 - Jan 2023',
-//     points: [
-//       'Developing and maintaining web applications using React.js and other related technologies.',
-//       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-//       'Implementing responsive design and ensuring cross-browser compatibility.',
-//       'Participating in code reviews and providing constructive feedback to other developers.',
-//     ],
-//   },
-//   {
-//     title: 'Full stack Developer',
-//     company_name: 'Meta',
-//     // icon: meta,
-//     iconBg: '#E6DEDD',
-//     date: 'Jan 2023 - Present',
-//     points: [
-//       'Developing and maintaining web applications using React.js and other related technologies.',
-//       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-//       'Implementing responsive design and ensuring cross-browser compatibility.',
-//       'Participating in code reviews and providing constructive feedback to other developers.',
-//     ],
-//   },
-// ];
-
-const experiences = [];
 
 const projects = [
   {
@@ -351,4 +194,4 @@ const footerLinks = [
   { name: 'Instagram', url: 'https://www.instagram.com/ajcrauseo/' },
 ];
 
-export { services, projects, experiences, footerLinks, techs, techsWithColor };
+export { services, projects, footerLinks };

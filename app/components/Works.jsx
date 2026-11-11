@@ -23,12 +23,13 @@ const ProjectCard = ({
         <div className='relative w-full h-[230px]'>
           <Image
             src={image}
-            alt={name}
-            width={300}
-            height={300}
-            className='w-full h-full object-cover rounded-2xl'
+            alt={`Screenshot of ${name}`}
+            fill
+            sizes='(min-width: 640px) 320px, 100vw'
+            className='object-cover rounded-2xl'
           />
           <ProjectLinks
+            name={name}
             source_code_link={source_code_link}
             project_link={project_link}
           />

@@ -36,7 +36,8 @@ const Navbar = () => {
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         {/* Logo Antony Cabeza */}
         <ScrollLink
-          to='/'
+          to='home'
+          href='#home'
           className='flex items-center gap-2'
           onClick={() => {
             setActive('');
@@ -44,7 +45,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <Image src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          <Image src={logo} alt='Antony Cabeza logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Antony Cabeza &nbsp;
             {/* <span className='lg:block hidden'>|&nbsp; Frontend Developer</span> */}
@@ -65,6 +66,7 @@ const Navbar = () => {
               <ScrollLink
                 activeClass='active'
                 to={id}
+                href={`#${id}`}
                 spy={true}
                 smooth={true}
                 offset={50}
@@ -125,6 +127,7 @@ const Navbar = () => {
                       <ScrollLink
                         activeClass='active'
                         to={id}
+                        href={`#${id}`}
                         spy={true}
                         smooth={true}
                         offset={50}

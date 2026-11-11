@@ -1,6 +1,15 @@
+import { Poppins } from 'next/font/google'
+
 import './globals.css'
 
 import { siteConfig } from './constants/site'
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '900'],
+  display: 'swap',
+  variable: '--font-poppins',
+})
 
 export const metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -8,9 +17,9 @@ export const metadata = {
     default: `${siteConfig.name} | ${siteConfig.title}`,
     template: `%s | ${siteConfig.name}`,
   },
-  description: siteConfig.description,
+  description: siteConfig.metaDescription,
   keywords: siteConfig.keywords,
-  authors: [siteConfig.author],
+  authors: [{ name: siteConfig.author.name, url: siteConfig.url }],
   creator: siteConfig.author.name,
   publisher: siteConfig.author.name,
   applicationName: `${siteConfig.name} Portfolio`,
@@ -18,17 +27,21 @@ export const metadata = {
     canonical: '/',
   },
   openGraph: {
-    type: 'website',
+    type: 'profile',
+    firstName: siteConfig.author.firstName,
+    lastName: siteConfig.author.lastName,
+    username: siteConfig.author.username,
     locale: siteConfig.locale,
     url: siteConfig.url,
     siteName: siteConfig.name,
     title: `${siteConfig.name} | ${siteConfig.title}`,
-    description: siteConfig.description,
+    description: siteConfig.metaDescription,
   },
   twitter: {
     card: 'summary_large_image',
+    creator: siteConfig.twitterHandle,
     title: `${siteConfig.name} | ${siteConfig.title}`,
-    description: siteConfig.description,
+    description: siteConfig.metaDescription,
   },
   robots: {
     index: true,
@@ -42,7 +55,10 @@ export const metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico', sizes: '16x16 32x32 48x48' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+    ],
     shortcut: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
@@ -54,7 +70,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.variable}>
       <body>{children}</body>
     </html>
   )

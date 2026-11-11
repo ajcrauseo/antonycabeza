@@ -1,12 +1,9 @@
 import Image from 'next/image';
-import Link from 'next/link';
-
-import { BsLinkedin, BsGithub } from 'react-icons/bs';
 
 import ScrollCTA from './ScrollCTA';
+import SocialLinks from './SocialLinks';
 
 import { styles } from '../styles';
-import { footerLinks } from '../constants/constants';
 import { MotionDiv } from '../hoc';
 
 import antonyCabezaPhoto from '@public/assets/foto-perfil-2026.png';
@@ -18,8 +15,10 @@ const Hero = () => {
       id='home'
       className='relative w-full min-h-screen mx-auto flex flex-col overflow-x-hidden lg:h-screen lg:justify-center'
     >
+      {/* Desplazamiento corto: el contenido queda dentro del viewport desde el
+          HTML del servidor, así no se retrasa el LCP esperando la hidratación. */}
       <MotionDiv
-        initial={{ y: '-150%' }}
+        initial={{ y: -40 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
         className={`${styles.paddingX} pt-[120px] w-full flex flex-col items-center gap-6 lg:flex-row-reverse lg:justify-evenly lg:pt-0`}
@@ -27,6 +26,8 @@ const Hero = () => {
         <Image
           src={antonyCabezaPhoto}
           alt='Antony Cabeza'
+          priority
+          sizes='(min-width: 1280px) 420px, (min-width: 1024px) 380px, (min-width: 768px) 300px, 240px'
           className='w-[240px] h-[240px] md:w-[300px] md:h-[300px] lg:w-[380px] lg:h-[380px] xl:w-[420px] xl:h-[420px]'
         />
         {/* Presentacion */}
@@ -49,22 +50,10 @@ const Hero = () => {
               Passionate about engineering, artificial intelligence, and automation
             </p>
             {/* Links a RRSS */}
-            <div className='flex gap-5 mt-8'>
-              <Link
-                href={footerLinks[0].url}
-                target='_blank'
-                className='transition duration-150 ease-out hover:ease-in hover:text-accent'
-              >
-                <BsLinkedin className='w-8 h-8 md:w-10 md:h-10' />
-              </Link>
-              <Link
-                href={footerLinks[1].url}
-                target='_blank'
-                className='transition duration-150 ease-out hover:ease-in hover:text-accent'
-              >
-                <BsGithub className='w-8 h-8 md:w-10 md:h-10' />
-              </Link>
-            </div>
+            <SocialLinks
+              className='flex gap-5 mt-8'
+              iconClassName='w-8 h-8 md:w-10 md:h-10'
+            />
           </div>
         </div>
       </MotionDiv>

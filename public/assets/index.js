@@ -13,7 +13,6 @@ import cryptoverse from './cryptoverse.png';
 import comisio from './comisio.png';
 import comitrack from './comitrack.png';
 import iphoneStock from './iphone-stock.png';
-import naturalbrows from './naturalbrows.png';
 
 export {
   logo,
@@ -30,5 +29,4 @@ export {
   comisio,
   comitrack,
   iphoneStock,
-  naturalbrows
 };
